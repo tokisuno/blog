@@ -5,3 +5,9 @@
 	path = public
 	url = https://github.com/tokisuno/tokisuno.github.io.git
 	branch = main
+[submodule "themes/eureka"]
+	path = themes/eureka
+	url = https://github.com/wangchucheng/hugo-eureka.git
+[submodule "themes/xmin"]
+	path = themes/xmin
+	url = https://github.com/yihui/hugo-xmin.git

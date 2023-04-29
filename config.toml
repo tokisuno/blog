@@ -1,4 +1,14 @@
 baseURL = 'https://tokisuno.github.io'
 languageCode = 'en-ca'
 title = 'da blog'
-theme = "hugo-theme-monochrome"
+theme = "xmin"
+
+[menu]
+[[menu.main]]
+    name='home'
+    pageRef = '/'
+    weight = 10
+[[menu.main]]
+    name='about me'
+    pageRef='aboutme'
+    weight = 20
