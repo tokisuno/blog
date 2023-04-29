@@ -1,4 +1,4 @@
 baseURL = 'https://tokisuno.github.io'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+languageCode = 'en-ca'
+title = 'da blog'
 theme = "hugo-theme-monochrome"
