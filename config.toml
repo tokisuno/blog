@@ -3,12 +3,18 @@ languageCode = 'en-ca'
 title = 'da blog'
 theme = "xmin"
 
+[params]
+    footer="[youtube](https://youtube.com/tokisuno) | [goodreads](https://www.goodreads.com/user/show/146547946-tokisuno)"
 [menu]
 [[menu.main]]
     name='home'
-    pageRef = '/'
-    weight = 10
+    pageRef='/'
+    weight=10
 [[menu.main]]
     name='about me'
     pageRef='aboutme'
-    weight = 20
+    weight=20
+[[menu.main]]
+    name='edc'
+    pageRef='equip'
+    weight=30
