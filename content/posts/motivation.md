@@ -1,0 +1,46 @@
+---
+title: "Motivation"
+date: 2023-05-05T09:56:55-04:00
+draft: true
+---
+
+## i don't believe in it.
+I know that may come off as strong, and it's not that I don't believe in motivation in of itself. I believe motivation is real, trust me. We've all experienced the sudden 3am "I am going to change the world" type of motivation, or the "I am going to turn my grades around and finally do all of those overdue assignments" type of motivation. It's honestly super common among peers of mine, and people I see in passing. It's not like they don't know they're essentially self sabotaging themselves. Hell, they embrace it and make it part of their personality. I find this to be extremely toxic and harmful in the long run. 
+
+It comes off as being unreliable and frustrating to work with. It doesn't matter if they always get the work done in the end when every time working with them feels like you want to tear your heart out, or scream at the top of your lungs because you're waiting until 11:59pm to hand something in. Am I speaking from personal experience? *Of course I am.* Anyone who has worked in group projects (with or without friends; a lot of the time we all have that one friend) can understand and relate to this, whether you were the do-er or on the receiving end.
+
+### toxic-productivity
+Before I go over my through process, I want to cover toxic-productivity because although I think my ideas are reasonable, there are people who will argue on the side of toxic-productivity, which can actually be very easily avoided. 
+
+An issue that productive-oriented people face a lot is burnout. They also think they aren't spending their time wisely 100% of the time, which makes them feel insignificant. They are sad when they're not spending 10 hours a day working on something. They key to not experiencing this, is taking breaks.
+
+Literally the only thing you need to do is give yourself 10-20 minutes to fuck around every 30 minutes to an hour (depending on how focused you are), and then go back to it. The only thing you have to guarantee for yourself is that you're going to get back to it after the break, otherwise it's pointless. If that's all you can do in a given day though, that's fine! Over time you will develop the ability to work for longer. Your main obstacle will be realizing when you're working too much and for too long. 
+
+If you don't give your mind any time to rest, you're going to end up falling into toxic-productivity, and probably stressed as fuck. 
+
+I went from being able to pomodoro with 20/5 intervals, to 50/10 without much of an issue. Sometimes 50/10 feels too short depending on what I am doing, but I stick with it because I trust the process as its worked for me in the past.
+
+## my though process
+My solution isn't a real solution if I'm being completely honest. My goal with life is to try and do the cool shit I want to do without hating myself/burning out. I don't want to fall into the stereotypical improvement-guru who talks about the "grind-set" and falls into toxic-productivity. That is never my intention, and that's never my goal. I just want to better myself and my life in ways that I've always wanted to.
+
+As cliche as this sounds, Atomic Habits, Deep Work, Inner Game of Tennis, and Digital Minimalism all changed my life for the better. I enjoy reading, I enjoy studying and learning about Japanese, I am trying to take a more active role in Linguistics, etc. All of this wouldn't have happened if I stuck to motivation. So what do I do instead? How do I stay "motivated"? 
+
+### literally just doing things
+It isn't a special process. I am not special. I am not gifted. I am just a guy who does things in his free time that sometimes amounts to something. I spent so much of my teenage years thinking about the best ways to do X and Y without actually applying any of it. It's very common too, and you might notice it in yourself and others. You reach this point of learning or doing where you just feel helpless, like you have to ask for help, you don't understand the concept and it's eating you inside. Motivated me could have done this! Motivated me comes out in time of need! I've told myself this so many times, I cringe thinking back. Granted, I was like that a lot of the time due to mental health issues.
+
+*I thought I was the theoretical top-dog. I thought I could grind and learn Korean in a year tops, but I didn't want to put in the effort because I wasn't motivated.*
+
+### evaluate your time
+The best way to get good at things, and improvement in general is by doing the things you want to do. Don't do something whenever you feel motivated, literally just do it (as cringe as that sounds). Evaluate your time, and think to yourself: *"Do I really feel good sitting on my phone, waiting for new texts to come in so I can talk to my friends? Should I have completed the reading we're covering in 2 days? Should I get off my phone right now?"*
+
+By evaluating what you're doing with your time, you become aware of how much of it you're wasting. 
+
+### habitz
+By doing the things you think take a lot of time and effort, even for a little bit every single day, you will notice significant improvement over time. That's to say, it isn't always at the same pace as everyone else, and your theoretical "Best Method of Learning!" may not work for you. But that's all part of the process. How else would you have known that if you didn't try and apply yourself? You would still think you're top shit. The reality is we all suck, but those who appear to suck "less" are the same as you. They're just learning things you want to learn, while you doomscroll for 10 hours a day. 
+
+### priority
+The difference is in priority, and knowing what you want. If you want to learn Japanese, and every time you speak to a Japanese person you say to yourself *"man, if only I knew Japanese. I should really learn it"*, but you never do it, you don't want to learn Japanese. You like the idea of being able to speak Japanese, but you don't want to learn it. You like the idea of being proficient in more than one language, but you aren't willing to put in the time to learn past Hiragana and Katakana. 
+
+
+
+
