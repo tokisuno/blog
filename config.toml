@@ -15,6 +15,6 @@ theme = "xmin"
     pageRef='aboutme'
     weight=20
 [[menu.main]]
-    name='edc'
+    name='stuff'
     pageRef='equip'
     weight=30
