@@ -29,33 +29,44 @@ title = 'my arsenal'
     - Honestly am a fan of them now, but I will eventually replace this because it requires constant maintenance for it to work properly
     - Not really accurate
 
+### portable 
+
+- Alcatel Go Flip 3
+    - Absolute shitter phone I hate kaiOS so much oh my god
+    - Has better cell service than my Qin Phone F21 
+    - Has expandable SD card storage which is located under the battery (fuck off alcatel)
+    - Audio skips if you play it while doing something else on the phone
+    - Good battery life, horrible screen, nice buttons, horrible operating system
+
+- Onyx Boox Note5
+    - Blessed by the eBay gods on this one (300cad before tax and shipping)
+    - Great battery life, great screen, touch id, the works
+    - The stock pen is horrible, but easily replacable by a knockoff Samsung S6 Lite pen
+    - Apps I use
+        - Notable (WIP eInk note-taking, [check it out here!](https://github.com/olup/notable))
+        - Minimalism Launcher (i paid for it some months ago to support the creator, but there are other options)
+        - Tachiyomi (manga, crashes a lot for some reason though)
+        - NeoReader3 (stock onyx note taking app. i use this for marking up academic articles)
+        - EinkBro (browser)
+        - Solid Browser (cool file explorer)
+        - Syncthing-Fork (syncing files between tablet and my synchthing ecosystem)
+
 - Airpod Pros (2nd gen.)
 	- If you are neurodivergant and have sensory problems, these are a lifesaver and I swear by them
-
-### portable 
-- Qin Phone F21 Pro (32/3)
-    - Transition phone (runs android 11)
-    - Has its own plan
-        - Freedom Mobile (NOT RECOMMENDED)
-    - Has bare essentials
-        - Discord
-        - Transit
-        - Google Maps
-        - Alarmy
-        - WhatsApp
-        - Brave Browser
-    - 32GB of storage w/ 3GB of ram
+    - Connect to the Go Flip 3 fine, but drains battery life faster so I use my ZSN Pros instead when I'm out
+        - I use them more for tasks that require movement so I don't have the wire in my way
+    - Active noise cancelling is actually god's gift to neurodivergancy
 
 - Moan InkPalm 5 (1st gen.)
     - 32GB/3GB
     - Apps
-        - Ankidroid
-        - Tachiyomi
-        - KOReader
-        - UnLauncher
-        - Eink Bro 
+        - Ankidroid (don't really use much atm)
+        - Tachiyomi (too small on the display)
+        - KOReader (great reading app. use this all the time)
+        - UnLauncher (good alternative to minimalism launcher)
+        - EinkBro (great eink browser)
 
-- skinnyboot (Thinkpad X220)
+- tokitop/skinnyboot (Thinkpad X220)
     - Specs
     	- Intel Core i7 2620M
     	- 8GB RAM
@@ -67,12 +78,6 @@ title = 'my arsenal'
     - I def need to invest in a screen replacement because 1366x768 is kinda weird + the screen has pretty bad ghosting/burn in 
     - No problems with this honestly. Battery is kinda bad but I live with it. 
 
-- iPad Air 4
-    - Base 64GB model
-    - Use it for Goodnotes + watching Anime from Plex
-    - Replacing with BOOX in the future (eye strain)
-	- Metal nib on the pen to not worry about buying new nibs  
-	- Paper-like knockoff screen protector
 
 - Casio W-217H
     - Basically the F91-W but modern 
@@ -89,6 +94,26 @@ title = 'my arsenal'
 I plan on eventually writing more in depth about my experiences with said devices, as I think it would be more beneficial to get the information out in some sort of accessible written form instead of having to wait for me to script, record, edit, and upload a YouTube video. It just makes the process easier*
 
 ### tech
+- Qin Phone F21 Pro (32/3)
+    - Transition phone (runs android 11)
+    - Has its own plan
+        - Freedom Mobile (NOT RECOMMENDED)
+    - Has bare essentials
+        - Discord
+        - Transit
+        - Google Maps
+        - Alarmy
+        - WhatsApp
+        - Brave Browser
+    - 32GB of storage w/ 3GB of ram
+
+- iPad Air 4
+    - Base 64GB model
+    - Use it for Goodnotes + watching Anime from Plex
+    - Replaced with Onyx Boox Note5
+	- Metal nib on the pen to not worry about buying new nibs  
+	- Paper-like knockoff screen protector
+
 - x61
     - Specs
     	- Intel Core 2 Duo T7100
