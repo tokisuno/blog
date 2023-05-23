@@ -12,7 +12,7 @@ title = 'my arsenal'
         - 500GB SSD 
         - GTX 660
     - Ubuntu (removed snaps)
-        - i3wm [(dots)](https://github.com/tokisuno/dots)
+        - i3wm [(dots)](https://github.com/tokisuno/dotfiles)
 
 - Apple Cinema Monitor 23"
     - Matte display is kinda goated
@@ -28,6 +28,8 @@ title = 'my arsenal'
     - Cheap trackball mouse so I could see if I like trackballs
     - Honestly am a fan of them now, but I will eventually replace this because it requires constant maintenance for it to work properly
     - Not really accurate
+
+---
 
 ### portable 
 
@@ -78,7 +80,6 @@ title = 'my arsenal'
     - I def need to invest in a screen replacement because 1366x768 is kinda weird + the screen has pretty bad ghosting/burn in 
     - No problems with this honestly. Battery is kinda bad but I live with it. 
 
-
 - Casio W-217H
     - Basically the F91-W but modern 
     - Better backlight and bigger face than the F91-W
@@ -89,6 +90,8 @@ title = 'my arsenal'
         - All my friends have this number and are used to it having iMessage so I don't really care about replacing the phone outright
     - Has various blockers on it  
 
+---
+
 ## list of devices i've daily driven for an extended period
 *please note that i like testing a researching a lot, so this is always subject to change.
 I plan on eventually writing more in depth about my experiences with said devices, as I think it would be more beneficial to get the information out in some sort of accessible written form instead of having to wait for me to script, record, edit, and upload a YouTube video. It just makes the process easier*
@@ -96,7 +99,7 @@ I plan on eventually writing more in depth about my experiences with said device
 ### tech
 - Qin Phone F21 Pro (32/3)
     - Transition phone (runs android 11)
-    - Has its own plan
+    - Had its own plan
         - Freedom Mobile (NOT RECOMMENDED)
     - Has bare essentials
         - Discord
@@ -105,7 +108,7 @@ I plan on eventually writing more in depth about my experiences with said device
         - Alarmy
         - WhatsApp
         - Brave Browser
-    - 32GB of storage w/ 3GB of ram
+        - KDEConnect for when I want a remote
 
 - iPad Air 4
     - Base 64GB model
@@ -114,7 +117,7 @@ I plan on eventually writing more in depth about my experiences with said device
 	- Metal nib on the pen to not worry about buying new nibs  
 	- Paper-like knockoff screen protector
 
-- x61
+- Thinkpad X61 (fav laptop to exist)
     - Specs
     	- Intel Core 2 Duo T7100
     	- 4GB RAM
