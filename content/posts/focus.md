@@ -1,7 +1,7 @@
 ---
 title: "My Not-So-Unique Experience with Focus"
 date: 2023-05-21T16:49:26-04:00
-draft: true
+draft: false
 ---
 
 # preface
