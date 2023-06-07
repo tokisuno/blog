@@ -71,7 +71,7 @@ title = 'my arsenal'
 - tokitop/skinnyboot (Thinkpad X220)
     - Specs
     	- Intel Core i7 2620M
-    	- 8GB RAM
+    	- 16GB of RAM
     	- 240GB SSD
     	- QCA6174 WiFi Card
     	- ValdikSS BIOS
