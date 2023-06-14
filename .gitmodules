@@ -3,11 +3,14 @@
 	url = https://github.com/kaiiiz/hugo-theme-monochrome.git
 [submodule "public"]
 	path = public
-	url = https://github.com/tokisuno/tokisuno.github.io.git
+	url = https://github.com/tokisuno/tokisuno.github.io
 	branch = main
 [submodule "themes/eureka"]
 	path = themes/eureka
 	url = https://github.com/wangchucheng/hugo-eureka.git
 [submodule "themes/xmin"]
 	path = themes/xmin
-	url = https://github.com/yihui/hugo-xmin.git
+	url = https://github.com/yihui/hugo-xmin
+[submodule "themes/hugo-xmin"]
+	path = themes/hugo-xmin
+	url = https://github.com/yihui/hugo-xmin
