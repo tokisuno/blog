@@ -5,6 +5,7 @@ theme = "xmin"
 
 [params]
     footer="[youtube](https://youtube.com/tokisuno) | [goodreads](https://www.goodreads.com/user/show/146547946-tokisuno)"
+
 [menu]
 [[menu.main]]
     name='home'
