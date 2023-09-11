@@ -7,7 +7,7 @@ title = 'my arsenal'
 
 ### @ my desk
 
-- skinnyboot (Thinkpad T460)
+- skinnyboot (Thinkpad T460s)
     - This entry is kinda cheating since I use this in a ThinkDock, so I use this as both a laptop and a desktop
     - i5 6300u
     - 12GB of RAM
@@ -26,23 +26,15 @@ title = 'my arsenal'
     - Topre is expensive but I find it worth
     - Honestly better modding experience than modding normal mechs 
 
-- Perixx Perimice-717
-    - Cheap trackball mouse so I could see if I like trackballs
-    - Honestly am a fan of them now, but I will eventually replace this because it requires constant maintenance for it to work properly
-    - Not really accurate
-    - Update (2023-07-05)
-        - I still hate using this LMAO
+- Logi M575 Trackball
+    - Smooth
+    - Good battery life
+    - Comfortable
+    - So much better than the Perixx trackball I had before
 
 ---
 
 ### portable 
-
-- Alcatel Go Flip 3
-    - Absolute SHITTER phone I hate kaiOS so much oh my god
-    - Has better cell service than my Qin Phone F21 
-    - Has expandable SD card storage which is located under the battery (fuck off alcatel)
-    - Audio skips if you play it while doing something else on the phone
-    - Good battery life, horrible screen, nice buttons, horrible operating system
 
 - Onyx Boox Note5
     - Blessed by the eBay gods on this one (300cad before tax and shipping)
@@ -56,6 +48,11 @@ title = 'my arsenal'
         - EinkBro (browser)
         - Solid Browser (cool file explorer)
         - Syncthing-Fork (syncing files between tablet and my synchthing ecosystem)
+
+- Google Pixel 3a
+    - Got this off eBay for $60 
+    - Minimal installation with its own number
+    - It's alright
         
 - iPhone 11
     - 128GB 
@@ -80,11 +77,10 @@ title = 'my arsenal'
         - UnLauncher (good alternative to minimalism launcher)
         - EinkBro (great eink browser)
 
-
 - Casio W-217H
     - Basically the F91-W but modern 
     - Better backlight and bigger face than the F91-W
-    
+
 ---
 
 ## list of devices i've daily driven for an extended period
@@ -113,6 +109,12 @@ I plan on eventually writing more in depth about my experiences with said device
 	- Metal nib on the pen to not worry about buying new nibs  
 	- Paper-like knockoff screen protector
 
+- Perixx Perimice-717
+    - Cheap trackball mouse so I could see if I like trackballs
+    - Honestly am a fan of them now, but I will eventually replace this because it requires constant maintenance for it to work properly
+    - Not really accurate
+    - Update (2023-07-05)
+        - I still hate using this LMAO
 
 - Classic iPods
 	- iPod 4 Monochrome
@@ -120,6 +122,13 @@ I plan on eventually writing more in depth about my experiences with said device
 	- iPod 5
 		- Rockboxed with iFlash 
         
+- Alcatel Go Flip 3
+    - Absolute SHITTER phone I hate kaiOS so much oh my god
+    - Has better cell service than my Qin Phone F21 
+    - Has expandable SD card storage which is located under the battery (fuck off alcatel)
+    - Audio skips if you play it while doing something else on the phone
+    - Good battery life, horrible screen, nice buttons, horrible operating system
+    
 ### graveyard computers
 
 - woopityscoop (my desktop) (no longer using)
@@ -158,6 +167,10 @@ I plan on eventually writing more in depth about my experiences with said device
 - Muji polycarbonate fountain pen
 	- Stock ink
 
+- Muji Aluminium Fountain Pen
+    - I love this so much.
+    - I journal with it in my Muji passport notebook
+    
 - Muji Gel Ink Ballpoint Pen 0.38mm/0.5mm
 	- Most generic but gets the job done + writes nicely
 

@@ -7,8 +7,16 @@ title = 'welcome'
 
 ### Howdy y'all. 
 
-I upload really infrequently, but here's where I post reviews + write about shit I find interesting. I didn't want to use my community tab or some other social media because I didn't want to be tied to it. 
+The idea of recording and editing is daunting at the moment. Every time I see my numbers go up on YouTube, I feel a pressure weighing over my since this is the first time in my life I've come this close to 1000 subs, and the first time I've really had bigger traction online. I'll upload eventually. Don't worry.
+
+## where to find me
+* [YouTube](https://youtube.com/tokisuno)
+* [Twitter](https://twitter.com/tokisuno)
+* [GoodReads](https://www.goodreads.com/user/show/146547946-tokisuno-lucas)
+* [GitHub](https://github.com/tokisuno)
+* [MAL](https://myanimelist.net/profile/tokisuno)
+* [osu!](https://osu.ppy.sh/u/tokisuno)
+* [start.gg](https://www.start.gg/user/78a9b68f)
 
 This blog is hosted off of GitHub Pages and made with Hugo.
 
-*my twitter is re-activated as of 2023-07-31. i am using it only for smash-related stuff since i want to grow within the scene that i've been apart of for 7 years. i won't be super active on it, but just know that it's me.*
