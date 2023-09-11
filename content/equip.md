@@ -13,7 +13,7 @@ title = 'my arsenal'
     - 12GB of RAM
     - 500GB M.2 SSD
     - Arch Linux w/ QTile
-        - (dots available here)[https://github.com/tokisuno/archdots]
+        - [dots available here](https://github.com/tokisuno/archdots)
     - Video of setup coming soon 
     
 - Apple Cinema Monitor 23"
