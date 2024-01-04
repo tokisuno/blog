@@ -21,7 +21,7 @@ Many of you know me as tokisuno, but I also go by Lucas. I am a 21 year old cont
 * [MAL](https://myanimelist.net/profile/tokisuno)
 
 ## gaming stuff
-* [chess.com](https://chess.com/boambomsky)
+* [chess.com](https://chess.com/member/boambomsky)
 * [etterna](https://etternaonline.com/user/toki)
 * [start.gg](https://www.start.gg/user/78a9b68f)
 * [osu!](https://osu.ppy.sh/u/tokisuno)
