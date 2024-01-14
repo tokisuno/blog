@@ -1,0 +1,20 @@
+---
+title: "Weekly Blog Posts + OCD"
+date: 2024-01-14T09:34:11-05:00
+draft: false 
+---
+
+# Introduction
+
+Something sparked in my brain. Although I don't make basically any content on YouTube at the moment, I have a lot of scripts that I have lying around that after a few minor tweaks, will be good to be recorded. With that being said, I've been saying that for almost a year now and last year I really didn't pump out as much as I wanted to. So to combat that, I will continue not uploading that much and make weekly blog posts! LOL
+
+# Identity struggle
+ 
+There's this struggle between me and the identity of "tokisuno" online that I've been struggling to keep in check. There are videos that I want to push out that I just want to push out, and those that I know will do well but I don't want to become a shill. I have diagnosed OCD, and upon further research there's this sub-strain/type of OCD called OCPD (Obsessive Compulsive Personality Disorder) which honestly speaks to me. Knowing what it is I am fighting against is one part of the battle, but the rest of it is harder.
+
+Maybe this will speak to some of you, but it's like there's this brain worm that lives in my brain (straight blanchin') that goes into fight or flight whenever someone says anything. I think it's because I've spent so much time online, and didn't have a super health friend group for a good portion of my formative years (oops). This has led to me developing unhealthy relationships with others because of what a group of kids I hung out with when I was younger told me was "right." It internalized. A lot of my sexuality-based self hate comes from them. If I don't do X then I am "gay" and that's a bad thing apparently, so I don't want to be that. *I can't talk or stand a certain way because that's girly and you don't want to be labelled a queer! Then you're a liability!!!* Love it! /s
+
+It's made me scared to even put the bisexual flag in my videos since I was afraid of being found online and being rejected for who I am. This fear of what others think of me combined with this obsession of being authentically and truthfully myself has been this war waging inside my brain. Maybe others can relate?
+
+# Being wrong
+When you see people getting called out every 8 seconds for being "cringe" or "wrong" online in a massive way, it puts you on edge. I haven't been uploading because honestly, I have a fear of being wrong. I am afraid of getting something wrong in a video and having my entire channel and life being ruined by it. I am afraid that if I don't make my sentences as un-ambiguous as possible that I will be clipped out of context and become a laughing stock. I've seen it happen before, and it terrifies me how much power people have on the internet. It's a completely different world from the real world, one that I've spent majority of my life on.
