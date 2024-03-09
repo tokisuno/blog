@@ -4,18 +4,27 @@ title = 'da blog'
 theme = "xmin"
 
 [params]
-    footer="[youtube](https://youtube.com/tokisuno) | [goodreads](https://www.goodreads.com/user/show/146547946-tokisuno)"
+  footer="[youtube](https://youtube.com/tokisuno) | [goodreads](https://www.goodreads.com/user/show/146547946-tokisuno)"
+  [params.author]
+    name="tokisuno"
 
 [menu]
 [[menu.main]]
-    name='home'
-    pageRef='/'
-    weight=10
+  name='home'
+  pageRef='/'
+  weight=10
 [[menu.main]]
-    name='about me'
-    pageRef='aboutme'
-    weight=20
+  name='about me'
+  pageRef='aboutme'
+  weight=20
 [[menu.main]]
-    name='stuff'
-    pageRef='equip'
-    weight=30
+  name='stuff'
+  pageRef='equip'
+  weight=30
+[outputs]
+  home = ["html", "rss"]
+  [outputFormats]
+    [outputFormats.RSS]
+      mediaType = "application/rss+xml"
+      baseName="feed"
+
