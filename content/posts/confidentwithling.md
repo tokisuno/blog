@@ -1,11 +1,11 @@
 ---
 title: "Confidence in my major"
-date: 2024-04-16
+date: 2024-04-18
 draft: false
 ---
 # Introduction
 
-I love Linguistics. I think Linguistics is such an ever-changing integral part of our existence that we don't give enough proper attention to as a society. We overlook how our words and speech affect aspects of the real world, and how we view things. I really enjoy linguistics, but there's always that nagging voice in my head that tells me I've made the wrong choice, and that's what I want to talk about now. I am 21 years old, 4th year undergraduate, and struggling with my identity in my field.
+I love Linguistics. I think Linguistics is such an ever-changing integral part of our existence that we don't give enough proper attention to as a society. We overlook how our words and speech affect aspects of the real world, and how we view things. I really enjoy linguistics, but there's always that nagging voice in my head that tells me I've made the wrong choice, and that's what I want to talk about now. I am 22 years old, 4th year undergraduate, and struggling with my identity in my field.
 
 # Why?
 
