@@ -1,6 +1,5 @@
-+++
-title = 'bienvenido cabros'
-+++
-
+---
+title: 'Welcome!'
+---
 ## tokisuno -- [toʊkiːsuːnoʊ]
-*he/him - 22 - nerd*
+*he/him // 22*

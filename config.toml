@@ -1,24 +1,24 @@
 baseURL = 'https://tokisuno.github.io'
 languageCode = 'en-ca'
-title = 'da blog'
+title = 'toki blog'
 theme = "toki-xmin"
 
 [params]
-  footer="[youtube](https://youtube.com/tokisuno) | [goodreads](https://www.goodreads.com/user/show/146547946-tokisuno)"
+  footer="[youtube](https://youtube.com/tokisuno) | [goodreads](https://www.goodreads.com/user/show/146547946-tokisuno) [rss]|(https://tokisuno.rocks/index.xml)"
   [params.author]
     name="tokisuno"
 
 [menu]
 [[menu.main]]
-  name='home'
+  name='/home/'
   pageRef='/'
   weight=10
 [[menu.main]]
-  name='about me'
+  name='/about/'
   pageRef='aboutme'
   weight=20
 [[menu.main]]
-  name='stuff'
+  name='/equipment/'
   pageRef='equip'
   weight=30
 [outputs]

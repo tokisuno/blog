@@ -1,26 +1,24 @@
-+++
-title = 'who am i???'
-+++
+---
+title: About me
+---
 
-## howdy y'all.
-
+## :)
 Many of you know me as tokisuno, but I also go by Lucas. I am a 22 year old content creator studying linguistics pursuing a masters degree who makes lifestyle/improvement content. I also make videos on tech and other topics I am interested in.
 
-## some info
+## FAQ
 - birthday: 2002-04-17
-- age: 21
+- age: 22
 - height: 173cm
 - major: linguistics
-- phone: as of 2024-01-04, the qin phone f21 pro rooted + flashed with f30 bands
+- phone: as of 2024-04-26, the qin phone f21 pro rooted + flashed with f30 bands
 - linux?: arch
 
-## where to find me
-* [YouTube](https://youtube.com/tokisuno)
-* [GoodReads](https://www.goodreads.com/user/show/146547946-tokisuno-lucas)
+## Linkz
 * [GitHub](https://github.com/tokisuno)
-* [MAL](https://myanimelist.net/profile/tokisuno)
+* [GoodReads](https://www.goodreads.com/user/show/146547946-tokisuno-lucas)
+* [YouTube](https://youtube.com/tokisuno)
 
-## gaming stuff
+## Gaming profiles
 * [chess.com](https://chess.com/member/boambomsky)
 * [etterna](https://etternaonline.com/user/toki)
 * [start.gg](https://www.start.gg/user/78a9b68f)
