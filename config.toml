@@ -4,7 +4,7 @@ title = 'toki blog'
 theme = "toki-xmin"
 
 [params]
-  footer="[YouTube](https://youtube.com/tokisuno) | [Goodreads](https://www.goodreads.com/user/show/146547946-tokisuno)  | [RSS](https://tokisuno.rocks/index.xml)"
+  footer="[YouTube](https://youtube.com/tokisuno) | [Goodreads](https://www.goodreads.com/user/show/146547946-tokisuno)  | [RSS](https://tokisuno.rocks/feed.xml)"
   [params.author]
     name="tokisuno"
 
