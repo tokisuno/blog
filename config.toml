@@ -26,5 +26,5 @@ theme = "toki-xmin"
   [outputFormats]
     [outputFormats.RSS]
       mediaType = "application/rss+xml"
-      baseName="index"
+      baseName="feed"
 
