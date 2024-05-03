@@ -1,26 +1,47 @@
 baseURL = 'https://tokisuno.github.io'
 languageCode = 'en-ca'
-title = 'toki blog'
-theme = "toki-xmin"
+footnotereturnlinkcontents = "↩"
+title = 'home'
+theme = "hugo-classic"
+enableGitInfo = false
+enableEmoji = true
 
 [params]
-  footer="[YouTube](https://youtube.com/tokisuno) | [Goodreads](https://www.goodreads.com/user/show/146547946-tokisuno)  | [RSS](https://tokisuno.rocks/feed.xml)"
+  footer="[YouTube](https://youtube.com/tokisuno) | [Goodreads](https://www.goodreads.com/user/show/146547946-tokisuno)"
   [params.author]
     name="tokisuno"
 
+[[module.mounts]]
+  source = 'static'
+  target = 'static'
+
+[[module.mounts]]
+  source = 'images'
+  target = 'static/images'
+
 [menu]
 [[menu.main]]
-  name='/home/'
-  pageRef='/'
-  weight=10
+  name='categories'
+  url='/categories/'
 [[menu.main]]
-  name='/about/'
+  name='tags'
+  url='/tags/'
+
+[[menu.feed]]
+  name='about'
   pageRef='aboutme'
-  weight=20
-[[menu.main]]
-  name='/equipment/'
+  weight=10
+
+[[menu.feed]]
+  name='equipment'
   pageRef='equip'
+  weight=20
+
+[[menu.feed]]
+  name="subscribe"
+  url="/feed.xml"
   weight=30
+
 [outputs]
   home = ["html", "rss"]
   [outputFormats]
