@@ -38,7 +38,7 @@ enableEmoji = true
   weight=20
 
 [[menu.feed]]
-  name="subscribe"
+  name="rss"
   url="/feed.xml"
   weight=30
 
