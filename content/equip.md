@@ -3,15 +3,15 @@ title: The catalogue
 ---
 
 ## what i am daily driving right now (my edc)
-*updated 2024-04-26*
+*updated 2024-06-01*
 
 ### @ my desk
 - poto (desktop)
     - Specs
-    - i7 2600
+    - i7 3770
+    - GTX 660
     - 16GB RAM
     - 500GB SSD
-    - GTX 660
     - Arch Linux w/ Qtile [(dots)](https://github.com/tokisuno/.dotfiles)
 
 - Apple Cinema Monitor 23"
@@ -35,14 +35,14 @@ title: The catalogue
 - skinnyboot (laptop)
     - Thinkpad T460s
     - i5 6300u
-    - 12GB of RAM
+    - 12GB RAM
     - 500GB M.2 SSD
     - Arch Linux w/ Qtile [(dots)](https://github.com/tokisuno/.dotfiles)
 
 - Onyx Boox Note5
     - Blessed by the eBay gods on this one (300cad before tax and shipping)
     - The stock pen is horrible, but easily replaceable by a knockoff Samsung S6 Lite pen
-    - The screen's accuracy is a big drawback and it makes me actively not want to use it. I found another way to take notes so if I want to handwrite, I use pen and paper. Otherwise I mainly use it for either reading larger PDFs (without notetaking) or manga
+    - The screen's accuracy is a big drawback and it makes me actively not want to use it. I found another way to take notes so if I want to handwrite, I use pen and paper. Otherwise I mainly use it for either reading larger PDFs (without note-taking) or manga
     - Apps I use
         - NeoReader3
         - Minimalism Launcher
@@ -50,6 +50,12 @@ title: The catalogue
         - Solid Browser (file explorer)
         - Zotero-fork (syncing papers and textbooks)
         - EinkBro (browser)
+
+- Moan InkPalm 5 (1st gen.)
+    - 32GB/3GB
+    - Apps
+        - KOReader (great reading app. use this all the time)
+        - UnLauncher (good alternative to minimalism launcher)
 
 - Qin Phone F21 Pro (32/3)
     - Has it's own number separate from my iPhone
@@ -68,12 +74,6 @@ title: The catalogue
 - Airpod Pros (2nd gen.)
     - Active noise cancelling is actually god's gift to neurodivergancy
     - Solid battery life but I feel like the ANC is getting worse on mine
-
-- Moan InkPalm 5 (1st gen.)
-    - 32GB/3GB
-    - Apps
-        - KOReader (great reading app. use this all the time)
-        - UnLauncher (good alternative to minimalism launcher)
 
 - Casio W800H-1BV
     - Cool watch
