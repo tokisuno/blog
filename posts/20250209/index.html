@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Happy 2025 ~ I already switched off DWM | home</title>
+    <link rel="stylesheet" href="/blog/css/style.css" />
+    <link rel="stylesheet" href="/blog/css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/blog/aboutme/">about</a></li>
+      
+      <li><a href="/blog/equip/">equipment</a></li>
+      
+      <li><a href="/blog/feed.xml">rss</a></li>
+      
+      <li><a href="/blog/categories/">categories</a></li>
+      
+      <li><a href="/blog/tags/">tags</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">Happy 2025 ~ I already switched off DWM</span></h1>
+
+<h2 class="date">2025/02/09</h2>
+</div>
+
+<main>
+<h1 id="introduction">Introduction</h1>
+<p>I know that I haven&rsquo;t been the most on-top of my channel and that I say something like this once every couple of months. If I am being completely honest and transparent, my health stuff still isn&rsquo;t super good and comfortable to deal with. Maybe one day I will make a video or a blog post talking about what I&rsquo;ve been going through, and show how I came out of it better than before, but in order to reach that I have to actually improve and get better. This blog post is more meant to get me back into the rhythm of writing posts for both my thoughts and things I don&rsquo;t really want to make videos about. But that aside, let me talk about why I backtracked on a lot of what I said in my most recent video regarding DWM. I also moved off of Alacritty and fully swapped over to a full Lua configuration setup.</p>
+<h1 id="i-dont-think-suckless-is-for-me">I don&rsquo;t think suckless is for me&hellip;</h1>
+<p>Although I really appreciate the suckless team for what they&rsquo;ve done, and I think their software projects are amazing with the constraints they put on themselves, at the end of the day I just don&rsquo;t think it was for me. I was fun diving into C, customizing header files, making things work, navigating through patches, so on and so fourth. I was getting annoying patching ST and DWM to get things that I thought were basic, but I am not used to patching. That&rsquo;s my fault. I am just not very good at patching, and navigating through ways to roll back, and didn&rsquo;t really use version control to make sure that I could roll back. This means that if I half-baked a solution and it didn&rsquo;t work, I would sometimes just reinstall DWM out of frustration (even if it wasn&rsquo;t necessary; all of this could have also been remedied with an undo tree but I digress). But I also think that this caused even more friction between me and my developer environment. At the end of the day, I just want a setup that works and I didn&rsquo;t want to go back to i3. But I used awesome for a white before that and had a pretty good time using it.</p>
+<h1 id="awesome-is-awesome">Awesome is awesome</h1>
+<p>Awesomewm for those unaware, is a DWM fork with customization built around Lua. It also has a lot of nice quality-of-life features built into it, and is very nice to use. I realized after using DWM that a lot of what I used it for already exists in awesome but it&rsquo;s better and I don&rsquo;t have to recompile and restart my xsession every single time. It&rsquo;s just a pain. Sometimes I just want to try out a new binding or create a new hotkey to launch a program/script. That should result in me having to break my whole workflow just to try out. Patches also became a pain, but I still think it&rsquo;s both a skill issue and patches genuinely being a pain in the ass sometimes.</p>
+<p>I think I really like challenging myself by using tools that I am unfamiliar with and trying to get them to work for me. It doesn&rsquo;t always work, and that&rsquo;s fine. It scratches the curiosity itch from my brain and then it&rsquo;s gone. I no longer have to think about it again. This was me trying out suckless shit and it just didn&rsquo;t work out for me.</p>
+<h1 id="the-lua-setup-tm">The Lua Setup (tm)</h1>
+<p>So I&rsquo;ve gone full Lua mode now. I really like patterns and rules and order, and having one configuration language across the 3 main tools that I use has been a very nice experience for me. The current setup I have goes as follows:</p>
+<ol>
+<li>Awesomewm</li>
+<li>WezTerm</li>
+<li>Neovim</li>
+</ol>
+<p>This setup both helps me become more familiar with Lua, and allows me to be more comfortable with having to change things in my configuration. It also means that I don&rsquo;t have to rely on proprietary K,V configuration languages for specific software. If I want to add something, I can just look at examples online and figure out how to do it myself. I haven&rsquo;t been super on top of programming recently, and to be honest I&rsquo;ve been kind of depressed while programming. It&rsquo;s something I might write about, but I journalled about it a couple of days ago and most sorted it out. But either way, getting myself more into the programming mojo has been the goal for the past couple of weeks, and at this point my configuration setup is kind of like a lua playground. I can hot-reload anything and see how I messed up, what I did wrong, what I did right, read through APIs and examples to understand what I&rsquo;m using and how to make it work, etc&hellip;</p>
+<p>This is actually the most amount of time (aside from going to Ruby) that I&rsquo;ve spent reading API documentation and actually understanding what I&rsquo;ve been reading. It feels really good. I am a strong believer in &ldquo;pick the language for the job; don&rsquo;t pick a language and then go from there&rdquo; because I find that people become way too language-reliant. They only love X and Y language and can&rsquo;t imagine programming in anything else. The language you use depends on the job at hand. If you&rsquo;re a programmer, you choose the right tool for the job, no matter your biases, and then solve the problem at hand. That&rsquo;s what we&rsquo;re meant to do. I really do like programming, but I think that configuring your programming tools with real programming languages provides a level of comfort and security in the tools that you&rsquo;re using. It also helps when everything uses the same languages so you don&rsquo;t have to adapt to another syntax for another configuration file, ultimately being limited by that language.</p>
+<h1 id="conclusion">Conclusion</h1>
+<p>At the end of the day, I&rsquo;m just a guy with my own opinions on the software that I use and how I want it to work. It isn&rsquo;t the be-all end-all advice, and shouldn&rsquo;t even be taken as advice. I don&rsquo;t even really like ricing; I find my setup to be very ugly LMAO. I just like being opinionated. That&rsquo;s it. That&rsquo;s the post. Thanks for reading. More posts to come :3</p>
+
+</main>
+
+  <footer>
+  
+  
+  <hr/>
+  <a href="https://youtube.com/tokisuno">YouTube</a> | <a href="https://www.goodreads.com/user/show/146547946-tokisuno">Goodreads</a>
+  
+  </footer>
+  </body>
+</html>
+

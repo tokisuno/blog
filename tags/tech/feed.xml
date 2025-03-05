@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tech on home</title>
+    <link>https://tokisuno.github.io/blog/tags/tech/</link>
+    <description>Recent content in Tech on home</description>
+    <generator>Hugo</generator>
+    <language>en-ca</language>
+    <lastBuildDate>Tue, 18 Feb 2025 09:51:22 -0500</lastBuildDate>
+    <atom:link href="https://tokisuno.github.io/blog/tags/tech/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>I moved back to Tmux &#43; Kitty</title>
+      <link>https://tokisuno.github.io/blog/posts/20250218/</link>
+      <pubDate>Tue, 18 Feb 2025 09:51:22 -0500</pubDate>
+      <guid>https://tokisuno.github.io/blog/posts/20250218/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;Title. I moved back to using the kitty terminal with tmux. My experiment with trying to use WezTerm for everything fell short for a couple of reasons that I will outline in this mini post, but the TL;DR is I just don&amp;rsquo;t think my WezTerm configuration was stable enough for my system. The WezTerm muxing was not stable enough for me which led to a lot of headache.&lt;/p&gt;&#xA;&lt;h1 id=&#34;why-i-moved-off&#34;&gt;Why I moved off&lt;/h1&gt;&#xA;&lt;p&gt;I don&amp;rsquo;t know what caused this, but when using WezTerm with its muxer, it has this habit of leaving fragments of old pop-ups behind. Let&amp;rsquo;s say I am programming in Neovim. I use a completion engine which means I have little menus pop up whenever I am writing text. Sometimes when typing, these pop-up windows would leave fragments of themselves behind. If I were to &lt;code&gt;&amp;lt;C-d&amp;gt;zz&lt;/code&gt; quickly, it would hang up and sometimes cause my bar to print twice. The editing experience was overall very stupid for absolutely no reason. I also had issues with input latency. I always felt like my key strokes were a little behind what they should be on WezTerm.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Happy 2025 ~ I already switched off DWM</title>
+      <link>https://tokisuno.github.io/blog/posts/20250209/</link>
+      <pubDate>Sun, 09 Feb 2025 12:28:49 -0500</pubDate>
+      <guid>https://tokisuno.github.io/blog/posts/20250209/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;I know that I haven&amp;rsquo;t been the most on-top of my channel and that I say something like this once every couple of months. If I am being completely honest and transparent, my health stuff still isn&amp;rsquo;t super good and comfortable to deal with. Maybe one day I will make a video or a blog post talking about what I&amp;rsquo;ve been going through, and show how I came out of it better than before, but in order to reach that I have to actually improve and get better. This blog post is more meant to get me back into the rhythm of writing posts for both my thoughts and things I don&amp;rsquo;t really want to make videos about. But that aside, let me talk about why I backtracked on a lot of what I said in my most recent video regarding DWM. I also moved off of Alacritty and fully swapped over to a full Lua configuration setup.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Byebye JavaScript, Hello Ruby</title>
+      <link>https://tokisuno.github.io/blog/posts/20240924/</link>
+      <pubDate>Tue, 24 Sep 2024 09:27:50 -0400</pubDate>
+      <guid>https://tokisuno.github.io/blog/posts/20240924/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;For those who follow my channel (idk how you would follow my channel and not be reading this), you would know that I have been going through TheOdinProject&amp;rsquo;s JavaScript path in hopes of becoming either a freelancer or a web developer. I am taking a break from Linguistics for the time being and I think the way TOP structures itself is really useful. I&amp;rsquo;d argue it&amp;rsquo;s the best learning resource for getting into web development. But I had an issue, and that issue was JavaScript. I think JavaScript is a great language, but it isn&amp;rsquo;t opinionated enough. Maybe JavaScript wasn&amp;rsquo;t sticking in my head as much as I&amp;rsquo;d have liked it to, but there was always something off putting. Honestly I&amp;rsquo;d still boil it down to a skill issue since I am new, but I digress. This blog post is about why I am switching from the JavaScript path over to the Ruby one &amp;gt;:)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>ADHD &amp; the bloat of &#34;productivity tools&#34;</title>
+      <link>https://tokisuno.github.io/blog/posts/20240525/</link>
+      <pubDate>Sat, 25 May 2024 09:52:22 -0400</pubDate>
+      <guid>https://tokisuno.github.io/blog/posts/20240525/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;&lt;em&gt;This post is kind of a continuation of &lt;a href=&#34;https://tokisuno.rocks/posts/20240419/&#34;&gt;&amp;ldquo;It&amp;rsquo;s never the right tool for the job&amp;rdquo;&lt;/a&gt;&lt;/em&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;em&gt;This is kind of a rough read. I don&amp;rsquo;t normally do in-depth editing on these posts, so if I contradict anything I say please just tell me and I&amp;rsquo;ll update the article&lt;/em&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;This post is going to be written very bluntly. I am writing this from the perspective of someone who has both read self-help and has tried a multitude of different apps/services in the name of &amp;ldquo;improving myself&amp;rdquo;. I have seen is both help and destroy productivity, and I think people often get disillusioned with doing what other more-successful people are doing because it&amp;rsquo;s &amp;ldquo;right&amp;rdquo;. But when they see another successful person doing something else, they hop on that, and then the next guy, and then the next guy&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Why I don&#39;t upload much</title>
+      <link>https://tokisuno.github.io/blog/posts/20240503/</link>
+      <pubDate>Fri, 03 May 2024 09:25:54 -0400</pubDate>
+      <guid>https://tokisuno.github.io/blog/posts/20240503/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;If you&amp;rsquo;ve been following me for any amount of time, you would have noticed that although I do stream semi-consistently, I am active on my server, and I am active on my goodreads, I still don&amp;rsquo;t really upload that much. I have some videos that have done pretty well, and I have other videos ideas, some of which I have held off for 2 years. &amp;ldquo;So why is that?&amp;rdquo; you may be wondering to yourself. The answer to that is a lot easier than it seems, and I&amp;rsquo;ve been ashamed to say this for a long time.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>It&#39;s never the right tool for the job</title>
+      <link>https://tokisuno.github.io/blog/posts/20240419/</link>
+      <pubDate>Fri, 19 Apr 2024 09:12:14 -0400</pubDate>
+      <guid>https://tokisuno.github.io/blog/posts/20240419/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;I&amp;rsquo;d like to think the realm of amateurs of any hobby and profession, most newbies/novices tend to think way too much about the tools they use instead of actually trying to learn the thing they want to learn. We can see this with guitar gear-snobs who are over-zealous in what gear they use, and what gear others use. It&amp;rsquo;s this obsession with finding the perfect &amp;ldquo;tone&amp;rdquo; and being able to play with minimal friction that can cause friction in their learning. The same goes with learning anything, and personally I think I am very qualified when talking about this.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Bloat</title>
+      <link>https://tokisuno.github.io/blog/posts/20230622/</link>
+      <pubDate>Thu, 22 Jun 2023 08:59:41 -0400</pubDate>
+      <guid>https://tokisuno.github.io/blog/posts/20230622/</guid>
+      <description>&lt;h1 id=&#34;the-world-is-bloated&#34;&gt;the world is bloated&lt;/h1&gt;&#xA;&lt;p&gt;I didn&amp;rsquo;t really care to pay attention to this for the longest time. However, since moving over to Linux, I&amp;rsquo;ve become more aware on what I would consider to be bloat. This doesn&amp;rsquo;t just apply to using Linux. This applies to all OSes around the world, running any web-browser available. The web is bloated, and it&amp;rsquo;s really annoying. But what does it mean when a website is bloated?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Scattered Life</title>
+      <link>https://tokisuno.github.io/blog/posts/20230527/</link>
+      <pubDate>Sat, 27 May 2023 19:17:49 -0400</pubDate>
+      <guid>https://tokisuno.github.io/blog/posts/20230527/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;introduction&lt;/h1&gt;&#xA;&lt;p&gt;It is pretty obvious that I love tech. I love creating, I love tinkering with things, I love making things, etc. It&amp;rsquo;s just been a part of my life for as long as I can remember. I didn&amp;rsquo;t really think much of it until last where, when I realized how much tech has evolved within my short life, and how much of an impact it has made on me. It also made me realize how much time it consumed and how obsessed I was with it. It wasn&amp;rsquo;t just tech. It spread to social media and latched onto my brain like some sort of parasite. The issue isn&amp;rsquo;t necessarily with social media, rather with the relationship I had with it. It started with me going on YouTube a lot, refreshing my home page and waiting for someone&amp;rsquo;s new video to drop, or going down some sort of rabbit hole. This in turn created horrible habits including chronic cell phone use and severe sleep deprivation.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>My Not-So-Unique Experience with Focus</title>
+      <link>https://tokisuno.github.io/blog/posts/20230521/</link>
+      <pubDate>Sun, 21 May 2023 16:49:26 -0400</pubDate>
+      <guid>https://tokisuno.github.io/blog/posts/20230521/</guid>
+      <description>&lt;h1 id=&#34;preface&#34;&gt;preface&lt;/h1&gt;&#xA;&lt;p&gt;This post is mainly focusing on my journey with my attention problems, where they stem from, how I&amp;rsquo;ve been managing them, and where I stand today. There are topics in here that may trigger some people (i.e. eating disorder &amp;amp; ocd) so read as you want. My story with focus and improvement has only started and is far from being over. It isn&amp;rsquo;t unique, it isn&amp;rsquo;t crazy, and it&amp;rsquo;s more common than you&amp;rsquo;d think. I&amp;rsquo;m not some sort of self-improvement guru. I am a 21 year old university student who makes youtube videos and sometimes posts to this blog. I am still struggling with focus along with a multitude of other things that I won&amp;rsquo;t make public. We all struggle, and we aren&amp;rsquo;t alone in it, no matter how much you/your brain tells you so.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

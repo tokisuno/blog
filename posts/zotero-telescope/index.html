@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Integrating Zotero with Telescope.nvim | home</title>
+    <link rel="stylesheet" href="/blog/css/style.css" />
+    <link rel="stylesheet" href="/blog/css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/blog/aboutme/">about</a></li>
+      
+      <li><a href="/blog/equip/">equipment</a></li>
+      
+      <li><a href="/blog/feed.xml">rss</a></li>
+      
+      <li><a href="/blog/categories/">categories</a></li>
+      
+      <li><a href="/blog/tags/">tags</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">Integrating Zotero with Telescope.nvim</span></h1>
+
+<h2 class="date">2024/05/08</h2>
+</div>
+
+<main>
+<h1 id="preface">Preface</h1>
+<p>This isn&rsquo;t an in-depth guide on how to use Neovim + LaTeX with Zotero integration. This is my explanation of how I set it up, how I sync my citations, and so-on. I will be writing a more in-depth guide in the future regarding this, but that post will come in due time.</p>
+<h1 id="introduction">Introduction</h1>
+<p>Zotero is really sick. I love Zotero. If there&rsquo;s anything that I can attribute to making my academic life easier, it&rsquo;s Zotero. Zotero is a personal library/bibliography management program that allows you to add and sort the articles you&rsquo;ve read, add proper metadata to them, and sort them. It makes citation creation infinitely easier &ndash; something that I absolutely <strong>DREADED</strong> in public schooling. No longer are the days where I have to use ezbib or citationmachine to create a bibliography. With Zotero + LaTeX, that&rsquo;s all done for me!</p>
+<h2 id="demonstration">Demonstration</h2>
+<p><a href="https://youtu.be/e56fTq1yFJw">CLICK HERE FOR DEMONSTRATION</a></p>
+<h2 id="requirements">Requirements</h2>
+<ul>
+<li>Neovim</li>
+<li>Unix operating system (I don&rsquo;t know how to use this with Windows)</li>
+<li>Some free time :)</li>
+</ul>
+<h1 id="tutorial">Tutorial</h1>
+<h2 id="exporting-citations">Exporting citations</h2>
+<p>Without citations, Telescope would have nothing to source! That&rsquo;s why I believe this to be an important first step.</p>
+<p>First, open your web-browser and search for the &ldquo;Better BibLaTeX Zotero extension. This is what you&rsquo;re going to use to create your bibliographies. Add it to your Zotero and do what the installation process has you to do and voila, you have the extension. Now it&rsquo;s actually time to start exporting citations.</p>
+<p>If you use Zotero and already sort your collections into folders, you&rsquo;re ahead of the game and I love you. For those who don&rsquo;t, you&rsquo;re a mess (/s).</p>
+<p><img src="settings.png" alt="settings"></p>
+<ol>
+<li>
+<p>Right click on the collection you want to export and select this new options called &ldquo;Export collection&hellip;&rdquo;</p>
+</li>
+<li>
+<p>Change the format to &ldquo;Better BibLaTeX&rdquo;</p>
+</li>
+<li>
+<p>Make sure the following options are checked off. This will create a new citation every time you add something to Zotero, and sync them in the background while you&rsquo;re working.</p>
+<ul>
+<li>Use Journal Abbreviation</li>
+<li><strong>Keep updated</strong></li>
+<li>Background export</li>
+</ul>
+</li>
+<li>
+<p>Pick a spot to save your citations</p>
+<ul>
+<li>I normally put these in my Dropbox. My Dropbox is synced between my Laptop and Desktop, so whenever I&rsquo;m out I can still access all my work and citations. I also keep my bibliographies in my <code>../latex</code> folder to simplify the process of sourcing them when I work later. I will explain this later.</li>
+</ul>
+</li>
+<li>
+<p>Save them!</p>
+</li>
+</ol>
+<p>You&rsquo;ve now successfully created an generated .bib file which Zotero automatically updates. Please keep in mind that updates citation keys will <strong>NOT</strong> be synced across files, so if there are keys you need to fix or update, I&rsquo;d do that before you start using that citation in your projects. Aside from that, all of your metadata and author information is accessed when the document is compiled, so those stay in sync :)</p>
+<p><img src="dropbox.png" alt="myview"></p>
+<h2 id="sourcing-citations-with-telescope">Sourcing citations with Telescope</h2>
+<p>Now here&rsquo;s the interesting part: accessing these with <code>Telescope.nvim</code>. The plugin I use for this is called <a href="https://github.com/nvim-telescope/telescope-bibtex.nvim">telescope-bibtex.nvim</a> and serves as an extension to Telescope. I couldn&rsquo;t figure out how to configure this for a long time, but after some trial and error I got it set up and working, and I&rsquo;m very happy with it!</p>
+<ul>
+<li>I organize all my plugins in separate files using Lazy <a href="https://github.com/tokisuno/nvim/tree/main/lua/lucas/lazy">(link to my nvim config)</a>.</li>
+</ul>
+<p><strong>Don&rsquo;t follow this guide to install Telescope</strong>. I most likely won&rsquo;t be updating this all the time, and the installation/dependencies could change which could make this guide broken.</p>
+<p>The first step would be to (obviously) install Telescope as follows.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#66d9ef">return</span> {
+</span></span><span style="display:flex;"><span>  {<span style="color:#e6db74">&#34;nvim-telescope/telescope.nvim&#34;</span>,
+</span></span><span style="display:flex;"><span>    dependencies <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#34;nvim-telescope/telescope-bibtex.nvim&#34;</span>,
+</span></span><span style="display:flex;"><span>      <span style="color:#e6db74">&#39;nvim-lua/plenary.nvim&#39;</span>,
+</span></span><span style="display:flex;"><span>    },
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-- ...</span>
+</span></span></code></pre></div><p>In this, we load our telescope-bibtex extension as a dependency for Telescope. This is to install it alongside Telescope while also loading it when it&rsquo;s being used. Now all we have to do is source our bibliographies.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>opts <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>     extensions <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>       bibtex <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>         depth <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>,
+</span></span><span style="display:flex;"><span>         custom_formats <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>           {
+</span></span><span style="display:flex;"><span>             id <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;zettel&#34;</span>, cite_marker <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;#%s&#34;</span>
+</span></span><span style="display:flex;"><span>           }
+</span></span><span style="display:flex;"><span>         },
+</span></span><span style="display:flex;"><span>         format <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;zettel&#39;</span>,
+</span></span><span style="display:flex;"><span>         global_files <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>           <span style="color:#e6db74">&#34;~/Dropbox/latex/bibs/clitics.bib&#34;</span>,
+</span></span><span style="display:flex;"><span>           <span style="color:#e6db74">&#34;~/Dropbox/latex/bibs/syntax.bib&#34;</span>,
+</span></span><span style="display:flex;"><span>           <span style="color:#e6db74">&#34;~/Dropbox/latex/bibs/philosophy.bib&#34;</span>,
+</span></span><span style="display:flex;"><span>           <span style="color:#e6db74">&#34;~/Dropbox/latex/bibs/programming.bib&#34;</span>,
+</span></span><span style="display:flex;"><span>         },
+</span></span><span style="display:flex;"><span>         citation_max_auth <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>,
+</span></span><span style="display:flex;"><span>         context <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>,
+</span></span><span style="display:flex;"><span>         context_fallback <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>,
+</span></span><span style="display:flex;"><span>         wrap <span style="color:#f92672">=</span> <span style="color:#66d9ef">false</span>,
+</span></span><span style="display:flex;"><span>       },
+</span></span><span style="display:flex;"><span>     }
+</span></span><span style="display:flex;"><span>   },
+</span></span><span style="display:flex;"><span>   config <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span> (_, opts)
+</span></span><span style="display:flex;"><span>     require(<span style="color:#e6db74">&#34;telescope&#34;</span>).setup(opts)
+</span></span><span style="display:flex;"><span>     require(<span style="color:#e6db74">&#34;telescope&#34;</span>).load_extension(<span style="color:#e6db74">&#34;bibtex&#34;</span>)
+</span></span><span style="display:flex;"><span>   <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span> },
+</span></span></code></pre></div><p>This also defines a custom format that I use when writing in my Zettelkasten. Also pay attention to this line:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>format <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;zettel&#39;</span>,
+</span></span></code></pre></div><p>I am using this in order to force my custom Zettelkasten format. I was mainly using this for quick Zettelkasten citations, but this format can be changed to match the filetype or anything. Once again, <a href="https://github.com/nvim-telescope/telescope-bibtex.nvim">here&rsquo;s the repo which contains a guide on what the opts do</a>. I highly suggest skimming through this if you want to further understand what it is this config does.</p>
+<h2 id="keymaps">Keymaps</h2>
+<p>The last thing we have to do is create keymaps to actually use the plugin. Although we could run the command in our nvim command mode <em>every single time we want to use it</em>, that&rsquo;s exhausting. Let&rsquo;s save some energy. I manage <strong>majority</strong> of my binds using <a href="https://github.com/folke/which-key.nvim">which-key.nvim</a> &ndash; an nvim plugin made by folke (the goat). With this, I have a visual menu pop up every time I linger on a keybind for too long that shows me what my binds do. Each bind I use has a description that I wrote so if I get lost, it makes it really easy to remember what it is I want to do. Before using <code>which-key</code>, I would make new binds without using them because I&rsquo;d forget and be too lazy to go back to my config to remember what it was I wrote. <code>which-key</code> solves that entirely!</p>
+<p>I only have one bind for citations which goes as follows.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#75715e">-- ...</span>
+</span></span><span style="display:flex;"><span>f <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>  z <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;:Telescope bibtex&lt;CR&gt;&#34;</span>, <span style="color:#e6db74">&#34;Find Zotero Citation&#34;</span>, opts},
+</span></span><span style="display:flex;"><span>},
+</span></span><span style="display:flex;"><span><span style="color:#75715e">-- ...</span>
+</span></span></code></pre></div><p>This is based off the mnemonic (f)ind (z)ettel. Although it doesn&rsquo;t really apply since you aren&rsquo;t finding a zettel, it has made sense in my head before and I&rsquo;m used to it so I don&rsquo;t bother changing it.</p>
+<h1 id="conclusion">Conclusion</h1>
+<p>This is how I make my life as easy as possible when it comes to managing and exporting citations into papers I have due. This has saved me a lot of time and stress and headache, and I cannot recommend Zotero enough. Neovim is cool too ig.</p>
+
+</main>
+
+  <footer>
+  
+  
+  <hr/>
+  <a href="https://youtube.com/tokisuno">YouTube</a> | <a href="https://www.goodreads.com/user/show/146547946-tokisuno">Goodreads</a>
+  
+  </footer>
+  </body>
+</html>
+

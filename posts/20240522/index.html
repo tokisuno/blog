@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Avoiding clocks • Obsession with Numbers | home</title>
+    <link rel="stylesheet" href="/blog/css/style.css" />
+    <link rel="stylesheet" href="/blog/css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/blog/aboutme/">about</a></li>
+      
+      <li><a href="/blog/equip/">equipment</a></li>
+      
+      <li><a href="/blog/feed.xml">rss</a></li>
+      
+      <li><a href="/blog/categories/">categories</a></li>
+      
+      <li><a href="/blog/tags/">tags</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">Avoiding clocks • Obsession with Numbers</span></h1>
+
+<h2 class="date">2024/05/22</h2>
+</div>
+
+<main>
+<p><em>I will most likely make a video on this, so for those who read the blog consider this an early-access version ;)</em></p>
+<h1 id="introduction">Introduction</h1>
+<p>I don&rsquo;t know if this sounds extreme or not, but personally having a clock in my line of vision at all times while studying kills productivity. I don&rsquo;t know if others feel the same, but personally if I have a clock and the date near by I won&rsquo;t stop thinking about it. It boils down to my OCD and letting the numbers take control in my head, so I will briefly explain my thought process and the steps I take.</p>
+<p>Before I go any further, here&rsquo;s a screenshot of my workspace right now:</p>
+<p><img src="screenshot.png" alt="Desktop"></p>
+<p>Pretty plain, right? That&rsquo;s intentional.</p>
+<h1 id="obsession-with-numbers">Obsession with numbers</h1>
+<h2 id="ocd-obsessive-compulsive-disorder">OCD (Obsessive Compulsive Disorder)</h2>
+<p>I have an obsession with numbers. People who have OCD can experience it in many different ways. Most commonly, it&rsquo;s a separation between physical compulsions and mental compulsions. I &ldquo;unfortunately&rdquo; have both of them. Not to any extreme extent (at least I think I don&rsquo;t LOL) but it still affects me. One of the ways this manifests is through time</p>
+<h2 id="time--dates">Time &amp; Dates</h2>
+<p>Time and dates really mess me up, and I mean REALLY mess me up. When I look at a clock while I know I have a deadline, I start focusing on the minutes. I calculate in my head how many minutes I have left before the next hour, and what the next hour means. I then count the hours and remember if there&rsquo;s anything I want to do in the day. If I don&rsquo;t meet this arbitrary goal/rule in my head for managing my time then it feels like the world is falling apart. I start compulsively checking the time, and checking my calendar. I start counting to see if I have enough time for anything, if there&rsquo;s enough days to do something.</p>
+<h2 id="counting">Counting</h2>
+<p>Counting is another big problem of mine. It took me 20 years of living until I realized I had a counting problem. Before it was more of a &ldquo;haha look at me this is so quirky&rdquo; but then later turned into &ldquo;oh shit this is a problem&rdquo;. I count how many times I hit a button to make sure it&rsquo;s right in my head. I sometimes count (not to the extent I used to) how many steps I would take to get from one place to another. I wouldn&rsquo;t count the total steps though. It would be more like an army general counting <strong>ONE TWO THREE FOUR, ONE TWO THREE FOUR!</strong>. I count the time signature of songs I find interesting. Whenever I fidget with my fidget cube, I count how many times I hit one thing over another. Everything has a note to it in my head, so I have to play the song that&rsquo;s being matched in my head. But things have to end correctly or else I compulsively continue until it feels right. When I eat snacks, it has to be a certain way or else I won&rsquo;t stop eating. This obviously developed into a binge-eating disorder of some sorts, which further contributes to my unhealthy relationship with food (but that&rsquo;s a story for another time).</p>
+<p>As you can already tell, this makes living really exhausting, and this is just scratching the surface. Counting, time, and relating the two creates many problems in my life. It&rsquo;s ruined study sessions plenty of times. So I made the executive decision to remove all clocks from my study area.</p>
+<h1 id="bye-bye-clocks">Bye-bye clocks</h1>
+<p><em>Before I get any comments mentioning this; yes, I still wear a watch. I don&rsquo;t obsessively check my watch for the time. It&rsquo;s something I just like having on at this point. This is the only clock that I use, and my relationship with it is healthy atm so it isn&rsquo;t an issue. If it becomes an issue, I&rsquo;ll sort it out and make an update.</em></p>
+<p>This whole system I&rsquo;ve worked out is to mitigate the urge to check the time and date, and the only way to do that is to give myself as little reason as possible to do so. This is the system I&rsquo;ve worked out.</p>
+<p>Let&rsquo;s refer back to the screenshot at the start of the article. As you may have notices, there are no times anywhere, but there&rsquo;s something in my bottom-right corner.</p>
+<p><img src="time.png" alt="faux clock"></p>
+<h2 id="1440">1440</h2>
+<p>This is a &ldquo;widget&rdquo; I made that&rsquo;s inspired by the MacOS application <a href="https://1440app.com">1440</a>. This acts as a countdown for the day by the minute. There are 1440 minutes in a day, and the widget refreshes with every minute passing. I made my own version of this called <a href="https://github.com/tokisuno/goltime">goltime</a> that I run in my Qtile <code>config.py</code> using the following:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>widget<span style="color:#f92672">.</span>GenPollText(
+</span></span><span style="display:flex;"><span>    name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;1440&#34;</span>,
+</span></span><span style="display:flex;"><span>    fmt<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{}</span><span style="color:#e6db74">&#34;</span>, update_interval<span style="color:#f92672">=</span><span style="color:#ae81ff">60</span>,
+</span></span><span style="display:flex;"><span>    func<span style="color:#f92672">=</span><span style="color:#66d9ef">lambda</span>: subprocess<span style="color:#f92672">.</span>check_output(os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>expanduser(<span style="color:#e6db74">&#34;~/.config/qtile/goltime&#34;</span>))<span style="color:#f92672">.</span>decode(<span style="color:#e6db74">&#34;utf-8&#34;</span>)
+</span></span><span style="display:flex;"><span>),
+</span></span></code></pre></div><p>The reasoning behind this is simple: I associate time passing in increments of 60. I can&rsquo;t do that easily when counting down from 1440. Instead I am thinking of increments of 50-100 instead of 30-60. It also helps remind me really how much time we have in any given day. Since I use pomodoros, it&rsquo;s easy for me to keep track of what time it is if I use a 1hr time and trust that the 1hr time will go off. I already have a hard time eating, so this serves as a reminder to eat and drink water, without actually letting all the time pass by.</p>
+<h2 id="weekday">Weekday</h2>
+<p>More often than not if I need to check the date for something, it&rsquo;s because I don&rsquo;t remember what day of the week it is. I normally remember things by the weekday instead of the actual numerical date. If I do happen to remember the numerical date, then I check my watch to look at the date. There&rsquo;s no reason for me to always look at the date since that&rsquo;s served as a distraction for me, so I&rsquo;ve hidden them. Instead, I have this line in my Qtile config which just gives me the day of the week. That&rsquo;s all.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>    widget<span style="color:#f92672">.</span>Clock(format<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;%A!&#34;</span>)
+</span></span></code></pre></div><h2 id="toggle-clock">Toggle clock</h2>
+<p>I still want to have a clock on my taskbar, but I like keeping it hidden along with my other widgets. I get distracted by the widgets on my taskbar, their ordering, and what they do. Before you say anything, yes, I know. I have many problems and should seek more therapy. LMFAO.</p>
+<p>In Qtile you can create &ldquo;widgetboxes&rdquo; to store widgets inside, and you can toggle their visibility. Here&rsquo;s the code that does that:</p>
+<p><em>This is placed between my imports and keymaps</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>widgetbox <span style="color:#f92672">=</span> widget<span style="color:#f92672">.</span>WidgetBox(widgets<span style="color:#f92672">=</span>[
+</span></span><span style="display:flex;"><span>        widget<span style="color:#f92672">.</span>Systray(),
+</span></span><span style="display:flex;"><span>        widget<span style="color:#f92672">.</span>Clock(format<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;%Y-%m-</span><span style="color:#e6db74">%d</span><span style="color:#e6db74"> | %H:%M&#34;</span>)],
+</span></span><span style="display:flex;"><span>                             text_closed<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;[&lt;]&#34;</span>,
+</span></span><span style="display:flex;"><span>                             text_open<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;[&gt;]&#34;</span>)
+</span></span></code></pre></div><p><em>This is placed where I keep my keymaps</em></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>    Key([mod], <span style="color:#e6db74">&#34;y&#34;</span>,
+</span></span><span style="display:flex;"><span>        lazy<span style="color:#f92672">.</span>widget[<span style="color:#e6db74">&#34;widgetbox&#34;</span>]<span style="color:#f92672">.</span>toggle()),
+</span></span></code></pre></div><p><em>This is called with all the other widgets</em>
+<img src="widgetbox.png" alt="widgetbox"></p>
+<h1 id="conclusion">Conclusion</h1>
+<p>I think the main takeaway from this is I really like numbers, but also really enjoying having my time to focus and do things that I want to do. I am actively seeking solutions to problems that I encounter in my daily life, and that isn&rsquo;t going to change until the day I die. I want to be the change that I make in my own life, and maybe others will find some sort of value in what I do. There&rsquo;s no shame in failure or not being where you want to be in life. You have your entire life to figure that out and solve your own problems :)</p>
+
+</main>
+
+  <footer>
+  
+  
+  <hr/>
+  <a href="https://youtube.com/tokisuno">YouTube</a> | <a href="https://www.goodreads.com/user/show/146547946-tokisuno">Goodreads</a>
+  
+  </footer>
+  </body>
+</html>
+

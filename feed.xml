@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Welcome! on home</title>
+    <link>https://tokisuno.github.io/blog/</link>
+    <description>Recent content in Welcome! on home</description>
+    <generator>Hugo</generator>
+    <language>en-ca</language>
+    <lastBuildDate>Tue, 18 Feb 2025 09:51:22 -0500</lastBuildDate>
+    <atom:link href="https://tokisuno.github.io/blog/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>I moved back to Tmux &#43; Kitty</title>
+      <link>https://tokisuno.github.io/blog/posts/20250218/</link>
+      <pubDate>Tue, 18 Feb 2025 09:51:22 -0500</pubDate>
+      <guid>https://tokisuno.github.io/blog/posts/20250218/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;Title. I moved back to using the kitty terminal with tmux. My experiment with trying to use WezTerm for everything fell short for a couple of reasons that I will outline in this mini post, but the TL;DR is I just don&amp;rsquo;t think my WezTerm configuration was stable enough for my system. The WezTerm muxing was not stable enough for me which led to a lot of headache.&lt;/p&gt;&#xA;&lt;h1 id=&#34;why-i-moved-off&#34;&gt;Why I moved off&lt;/h1&gt;&#xA;&lt;p&gt;I don&amp;rsquo;t know what caused this, but when using WezTerm with its muxer, it has this habit of leaving fragments of old pop-ups behind. Let&amp;rsquo;s say I am programming in Neovim. I use a completion engine which means I have little menus pop up whenever I am writing text. Sometimes when typing, these pop-up windows would leave fragments of themselves behind. If I were to &lt;code&gt;&amp;lt;C-d&amp;gt;zz&lt;/code&gt; quickly, it would hang up and sometimes cause my bar to print twice. The editing experience was overall very stupid for absolutely no reason. I also had issues with input latency. I always felt like my key strokes were a little behind what they should be on WezTerm.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>I have Crohn&#39;s Disease</title>
+      <link>https://tokisuno.github.io/blog/posts/20250216/</link>
+      <pubDate>Sun, 16 Feb 2025 07:11:51 -0500</pubDate>
+      <guid>https://tokisuno.github.io/blog/posts/20250216/</guid>
+      <description>&lt;h1 id=&#34;the-title-doesnt-lie&#34;&gt;The title doesn&amp;rsquo;t lie&lt;/h1&gt;&#xA;&lt;p&gt;A bit over a year ago I went rock climbing for the first time, and suffered a pretty annoying concussion. I say it was annoying because I felt pretty find afterwards aside from the brain swelling sending mixed signals to different parts of my body. But I was okay-ish. I have diagnosed OCD and part of my OCD is an increased awareness of my bowels. I am hyper-aware of what goes on down there and it has led to lots of inconveniences in my life. I did go through a stint of IBS at one point a few years ago due to my diet, but that&amp;rsquo;s been long gone.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Happy 2025 ~ I already switched off DWM</title>
+      <link>https://tokisuno.github.io/blog/posts/20250209/</link>
+      <pubDate>Sun, 09 Feb 2025 12:28:49 -0500</pubDate>
+      <guid>https://tokisuno.github.io/blog/posts/20250209/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;I know that I haven&amp;rsquo;t been the most on-top of my channel and that I say something like this once every couple of months. If I am being completely honest and transparent, my health stuff still isn&amp;rsquo;t super good and comfortable to deal with. Maybe one day I will make a video or a blog post talking about what I&amp;rsquo;ve been going through, and show how I came out of it better than before, but in order to reach that I have to actually improve and get better. This blog post is more meant to get me back into the rhythm of writing posts for both my thoughts and things I don&amp;rsquo;t really want to make videos about. But that aside, let me talk about why I backtracked on a lot of what I said in my most recent video regarding DWM. I also moved off of Alacritty and fully swapped over to a full Lua configuration setup.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>My Reading Goals -- Update!</title>
+      <link>https://tokisuno.github.io/blog/posts/20241111/</link>
+      <pubDate>Mon, 11 Nov 2024 16:32:46 -0500</pubDate>
+      <guid>https://tokisuno.github.io/blog/posts/20241111/</guid>
+      <description>&lt;p&gt;For those who are unaware, I had a reading goal for this year of 35 minutes. Now, the year hasn&amp;rsquo;t ended yet so I can still make it back, but I want to make it clear that I am not sad or disappointed in myself. This post isn&amp;rsquo;t to make excuses for myself because quite frankly, I feel really good about this year so far! I still have a physical illness that affects me daily, so audio content has helped me through a lot. I have been listening to a lot more podcasts and live-plays these days.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Byebye JavaScript, Hello Ruby</title>
+      <link>https://tokisuno.github.io/blog/posts/20240924/</link>
+      <pubDate>Tue, 24 Sep 2024 09:27:50 -0400</pubDate>
+      <guid>https://tokisuno.github.io/blog/posts/20240924/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;For those who follow my channel (idk how you would follow my channel and not be reading this), you would know that I have been going through TheOdinProject&amp;rsquo;s JavaScript path in hopes of becoming either a freelancer or a web developer. I am taking a break from Linguistics for the time being and I think the way TOP structures itself is really useful. I&amp;rsquo;d argue it&amp;rsquo;s the best learning resource for getting into web development. But I had an issue, and that issue was JavaScript. I think JavaScript is a great language, but it isn&amp;rsquo;t opinionated enough. Maybe JavaScript wasn&amp;rsquo;t sticking in my head as much as I&amp;rsquo;d have liked it to, but there was always something off putting. Honestly I&amp;rsquo;d still boil it down to a skill issue since I am new, but I digress. This blog post is about why I am switching from the JavaScript path over to the Ruby one &amp;gt;:)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Short rant about myself and content creation</title>
+      <link>https://tokisuno.github.io/blog/posts/20240820/</link>
+      <pubDate>Tue, 20 Aug 2024 07:51:57 -0400</pubDate>
+      <guid>https://tokisuno.github.io/blog/posts/20240820/</guid>
+      <description>&lt;h1 id=&#34;identity&#34;&gt;Identity&lt;/h1&gt;&#xA;&lt;p&gt;It&amp;rsquo;s been no surprise to anyone that I haven&amp;rsquo;t been uploading anything lately, and a big portion of that is due to insecurity. I want to preface this article by emphasizing this isn&amp;rsquo;t being posted for the sake of garnering sympathy. I find it therapeutic to write about my inner thoughts and post it online. This blog obviously isn&amp;rsquo;t comprised of my deepest most inner thoughts &amp;ndash; you guys aren&amp;rsquo;t my therapist.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Announcement: Changes for the future</title>
+      <link>https://tokisuno.github.io/blog/posts/20240701/</link>
+      <pubDate>Mon, 01 Jul 2024 10:28:32 -0400</pubDate>
+      <guid>https://tokisuno.github.io/blog/posts/20240701/</guid>
+      <description>&lt;h1 id=&#34;not-clickbait-real&#34;&gt;Not clickbait (real)&lt;/h1&gt;&#xA;&lt;p&gt;There are going to be quite a few changes to the &amp;ldquo;tokisuno&amp;rdquo; brand (which feels weird and cringe to say since I am a small creator), so I wanted to announce some of what to expect in the future. I am not quitting, nor am I removing the blog entirely. I am just shifting the public repo somewhere else so I can use the domain for my portfolio.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>ADHD &amp; the bloat of &#34;productivity tools&#34;</title>
+      <link>https://tokisuno.github.io/blog/posts/20240525/</link>
+      <pubDate>Sat, 25 May 2024 09:52:22 -0400</pubDate>
+      <guid>https://tokisuno.github.io/blog/posts/20240525/</guid>
+      <description>&lt;ul&gt;&#xA;&lt;li&gt;&lt;em&gt;This post is kind of a continuation of &lt;a href=&#34;https://tokisuno.rocks/posts/20240419/&#34;&gt;&amp;ldquo;It&amp;rsquo;s never the right tool for the job&amp;rdquo;&lt;/a&gt;&lt;/em&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;em&gt;This is kind of a rough read. I don&amp;rsquo;t normally do in-depth editing on these posts, so if I contradict anything I say please just tell me and I&amp;rsquo;ll update the article&lt;/em&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;This post is going to be written very bluntly. I am writing this from the perspective of someone who has both read self-help and has tried a multitude of different apps/services in the name of &amp;ldquo;improving myself&amp;rdquo;. I have seen is both help and destroy productivity, and I think people often get disillusioned with doing what other more-successful people are doing because it&amp;rsquo;s &amp;ldquo;right&amp;rdquo;. But when they see another successful person doing something else, they hop on that, and then the next guy, and then the next guy&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Avoiding clocks • Obsession with Numbers</title>
+      <link>https://tokisuno.github.io/blog/posts/20240522/</link>
+      <pubDate>Wed, 22 May 2024 09:13:24 -0400</pubDate>
+      <guid>https://tokisuno.github.io/blog/posts/20240522/</guid>
+      <description>&lt;p&gt;&lt;em&gt;I will most likely make a video on this, so for those who read the blog consider this an early-access version ;)&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;I don&amp;rsquo;t know if this sounds extreme or not, but personally having a clock in my line of vision at all times while studying kills productivity. I don&amp;rsquo;t know if others feel the same, but personally if I have a clock and the date near by I won&amp;rsquo;t stop thinking about it. It boils down to my OCD and letting the numbers take control in my head, so I will briefly explain my thought process and the steps I take.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>3 Daily Habits for 2024</title>
+      <link>https://tokisuno.github.io/blog/posts/20240511/</link>
+      <pubDate>Sat, 11 May 2024 09:30:58 -0400</pubDate>
+      <guid>https://tokisuno.github.io/blog/posts/20240511/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;After reading &amp;ldquo;The Inner Game of Tennis&amp;rdquo; and &amp;ldquo;Atomic Habits&amp;rdquo; for the first time, I started trusting myself more than ever before. The results came with it too, as I was able to perform well and improve in anything I put my mind to at a rate I had never experienced before. Then, life hit and slowly but surely to mask my true feelings, I started falling back into old habits. These old habits mainly involve self-disparaging comments which at first, were just jokes! I knew who I was better than anyone else, so me saying this things like how I used to should be fine, right? &lt;em&gt;&lt;strong&gt;Right?&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Integrating Zotero with Telescope.nvim</title>
+      <link>https://tokisuno.github.io/blog/posts/zotero-telescope/</link>
+      <pubDate>Wed, 08 May 2024 09:14:32 -0400</pubDate>
+      <guid>https://tokisuno.github.io/blog/posts/zotero-telescope/</guid>
+      <description>&lt;h1 id=&#34;preface&#34;&gt;Preface&lt;/h1&gt;&#xA;&lt;p&gt;This isn&amp;rsquo;t an in-depth guide on how to use Neovim + LaTeX with Zotero integration. This is my explanation of how I set it up, how I sync my citations, and so-on. I will be writing a more in-depth guide in the future regarding this, but that post will come in due time.&lt;/p&gt;&#xA;&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;Zotero is really sick. I love Zotero. If there&amp;rsquo;s anything that I can attribute to making my academic life easier, it&amp;rsquo;s Zotero. Zotero is a personal library/bibliography management program that allows you to add and sort the articles you&amp;rsquo;ve read, add proper metadata to them, and sort them. It makes citation creation infinitely easier &amp;ndash; something that I absolutely &lt;strong&gt;DREADED&lt;/strong&gt; in public schooling. No longer are the days where I have to use ezbib or citationmachine to create a bibliography. With Zotero + LaTeX, that&amp;rsquo;s all done for me!&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Why I don&#39;t upload much</title>
+      <link>https://tokisuno.github.io/blog/posts/20240503/</link>
+      <pubDate>Fri, 03 May 2024 09:25:54 -0400</pubDate>
+      <guid>https://tokisuno.github.io/blog/posts/20240503/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;If you&amp;rsquo;ve been following me for any amount of time, you would have noticed that although I do stream semi-consistently, I am active on my server, and I am active on my goodreads, I still don&amp;rsquo;t really upload that much. I have some videos that have done pretty well, and I have other videos ideas, some of which I have held off for 2 years. &amp;ldquo;So why is that?&amp;rdquo; you may be wondering to yourself. The answer to that is a lot easier than it seems, and I&amp;rsquo;ve been ashamed to say this for a long time.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Living with OCD</title>
+      <link>https://tokisuno.github.io/blog/posts/20240426/</link>
+      <pubDate>Fri, 26 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>https://tokisuno.github.io/blog/posts/20240426/</guid>
+      <description>&lt;p&gt;I constantly rub my fingers together because if I don&amp;rsquo;t it feels like the world is ending. I constantly rub my hands together to make sure that they have the right feeling. If they don&amp;rsquo;t I have to go wash my hands or rub them more to itch my brain. When I cross the street, I have to hit the button 10 times, otherwise my brain isn&amp;rsquo;t convinced that I hit it. I often loose count, so restart over, and over, and over again. I blink harder than I should to get the feeling of not blinking out of my frontal lobe. I sometimes binge-eat in fear of not eating enough, or because I&amp;rsquo;ve accidentally starved myself again out of being scared to get food. Everything feels dirty so I avoid using my hands when I think it&amp;rsquo;s unnecessary. I move around and rock back-and-fourth in my chair because I can&amp;rsquo;t sit still. I always feel uncomfortable. I have nervous ticks because of this, which lead to my lips being bitten so much they sometimes turn bloodied, the skin on my thumbs bleeding, and the joints on my wrists, fingers, and toes being in pain from overuse.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>It&#39;s never the right tool for the job</title>
+      <link>https://tokisuno.github.io/blog/posts/20240419/</link>
+      <pubDate>Fri, 19 Apr 2024 09:12:14 -0400</pubDate>
+      <guid>https://tokisuno.github.io/blog/posts/20240419/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;I&amp;rsquo;d like to think the realm of amateurs of any hobby and profession, most newbies/novices tend to think way too much about the tools they use instead of actually trying to learn the thing they want to learn. We can see this with guitar gear-snobs who are over-zealous in what gear they use, and what gear others use. It&amp;rsquo;s this obsession with finding the perfect &amp;ldquo;tone&amp;rdquo; and being able to play with minimal friction that can cause friction in their learning. The same goes with learning anything, and personally I think I am very qualified when talking about this.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Confidence in my major</title>
+      <link>https://tokisuno.github.io/blog/posts/20240418/</link>
+      <pubDate>Thu, 18 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>https://tokisuno.github.io/blog/posts/20240418/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;I love Linguistics. I think Linguistics is such an ever-changing integral part of our existence that we don&amp;rsquo;t give enough proper attention to as a society. We overlook how our words and speech affect aspects of the real world, and how we view things. I really enjoy linguistics, but there&amp;rsquo;s always that nagging voice in my head that tells me I&amp;rsquo;ve made the wrong choice, and that&amp;rsquo;s what I want to talk about now. I am 22 years old, 4th year undergraduate, and struggling with my identity in my field.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Whoops</title>
+      <link>https://tokisuno.github.io/blog/posts/20240309/</link>
+      <pubDate>Sat, 09 Mar 2024 09:20:53 -0500</pubDate>
+      <guid>https://tokisuno.github.io/blog/posts/20240309/</guid>
+      <description>&lt;p&gt;So&amp;hellip; I did say that I was going to do weekly posts, and I am back to say that I&amp;rsquo;m going back to doing those. When I initially said that, I was going through a lot of personal stuff and didn&amp;rsquo;t want to figure out how my git repos actually worked, so I mental boomed and didn&amp;rsquo;t post to here for a hot minute. It turns out all I had to do was switch branches in my public repo, and then push new commits, and now everything is fine.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Weekly Blog Posts &#43; OCD</title>
+      <link>https://tokisuno.github.io/blog/posts/20240114/</link>
+      <pubDate>Sun, 14 Jan 2024 09:34:11 -0500</pubDate>
+      <guid>https://tokisuno.github.io/blog/posts/20240114/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;Something sparked in my brain. Although I don&amp;rsquo;t make basically any content on YouTube at the moment, I have a lot of scripts that I have lying around that after a few minor tweaks, will be good to be recorded. With that being said, I&amp;rsquo;ve been saying that for almost a year now and last year I really didn&amp;rsquo;t pump out as much as I wanted to. So to combat that, I will continue not uploading that much and make weekly blog posts! LOL&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>New Year Resolutions</title>
+      <link>https://tokisuno.github.io/blog/posts/20240103/</link>
+      <pubDate>Wed, 03 Jan 2024 13:24:02 -0500</pubDate>
+      <guid>https://tokisuno.github.io/blog/posts/20240103/</guid>
+      <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;I recently released a video where I briefly covered how my 2024 went and what I wanted to accomplish going into the new year. All of what I said in that video is true, but I wanted to make a blog post that really goes into what I want to accomplish, why I want to do it, and methods I can see myself taking. This is all for my own personal accountability, and isn&amp;rsquo;t to be taken as a guide. This also isn&amp;rsquo;t to be taken as promise either, as I can&amp;rsquo;t tell what the future holds for me. This is more of a staple and/or a reminder that I can plan appropriately for when I need to, so when I do feel lost I have something to look back to this year.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Friends</title>
+      <link>https://tokisuno.github.io/blog/posts/20230731/</link>
+      <pubDate>Mon, 31 Jul 2023 09:20:36 -0400</pubDate>
+      <guid>https://tokisuno.github.io/blog/posts/20230731/</guid>
+      <description>&lt;p&gt;last edited: 2023-07-31&lt;/p&gt;&#xA;&lt;h1 id=&#34;its-difficult&#34;&gt;it&amp;rsquo;s difficult&lt;/h1&gt;&#xA;&lt;p&gt;For as long as I could remember, making friends has been somewhat of a struggle for me. People who know me will 100% attest to this, since from the outside I am a pretty sociable person, good, and pretty known around. I think the word one would use is &amp;ldquo;popular&amp;rdquo;, but this means absolutely nothing to me. In reality, trying to make any sort of connection is very difficult for me. Trauma, being neurodivergent, and having low self-confidence all plays a role in this, and has caused me to make major mistakes with those around me. It&amp;rsquo;s normally me messing up, and trying to make good. I&amp;rsquo;ve gotten better at that. I&amp;rsquo;ve gotten good at owning up to my mistakes, and trying to push through to correct what was wrong.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Bloat</title>
+      <link>https://tokisuno.github.io/blog/posts/20230622/</link>
+      <pubDate>Thu, 22 Jun 2023 08:59:41 -0400</pubDate>
+      <guid>https://tokisuno.github.io/blog/posts/20230622/</guid>
+      <description>&lt;h1 id=&#34;the-world-is-bloated&#34;&gt;the world is bloated&lt;/h1&gt;&#xA;&lt;p&gt;I didn&amp;rsquo;t really care to pay attention to this for the longest time. However, since moving over to Linux, I&amp;rsquo;ve become more aware on what I would consider to be bloat. This doesn&amp;rsquo;t just apply to using Linux. This applies to all OSes around the world, running any web-browser available. The web is bloated, and it&amp;rsquo;s really annoying. But what does it mean when a website is bloated?&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Scattered Life</title>
+      <link>https://tokisuno.github.io/blog/posts/20230527/</link>
+      <pubDate>Sat, 27 May 2023 19:17:49 -0400</pubDate>
+      <guid>https://tokisuno.github.io/blog/posts/20230527/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;introduction&lt;/h1&gt;&#xA;&lt;p&gt;It is pretty obvious that I love tech. I love creating, I love tinkering with things, I love making things, etc. It&amp;rsquo;s just been a part of my life for as long as I can remember. I didn&amp;rsquo;t really think much of it until last where, when I realized how much tech has evolved within my short life, and how much of an impact it has made on me. It also made me realize how much time it consumed and how obsessed I was with it. It wasn&amp;rsquo;t just tech. It spread to social media and latched onto my brain like some sort of parasite. The issue isn&amp;rsquo;t necessarily with social media, rather with the relationship I had with it. It started with me going on YouTube a lot, refreshing my home page and waiting for someone&amp;rsquo;s new video to drop, or going down some sort of rabbit hole. This in turn created horrible habits including chronic cell phone use and severe sleep deprivation.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>My Not-So-Unique Experience with Focus</title>
+      <link>https://tokisuno.github.io/blog/posts/20230521/</link>
+      <pubDate>Sun, 21 May 2023 16:49:26 -0400</pubDate>
+      <guid>https://tokisuno.github.io/blog/posts/20230521/</guid>
+      <description>&lt;h1 id=&#34;preface&#34;&gt;preface&lt;/h1&gt;&#xA;&lt;p&gt;This post is mainly focusing on my journey with my attention problems, where they stem from, how I&amp;rsquo;ve been managing them, and where I stand today. There are topics in here that may trigger some people (i.e. eating disorder &amp;amp; ocd) so read as you want. My story with focus and improvement has only started and is far from being over. It isn&amp;rsquo;t unique, it isn&amp;rsquo;t crazy, and it&amp;rsquo;s more common than you&amp;rsquo;d think. I&amp;rsquo;m not some sort of self-improvement guru. I am a 21 year old university student who makes youtube videos and sometimes posts to this blog. I am still struggling with focus along with a multitude of other things that I won&amp;rsquo;t make public. We all struggle, and we aren&amp;rsquo;t alone in it, no matter how much you/your brain tells you so.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Motivation</title>
+      <link>https://tokisuno.github.io/blog/posts/20230505/</link>
+      <pubDate>Fri, 05 May 2023 09:56:55 -0400</pubDate>
+      <guid>https://tokisuno.github.io/blog/posts/20230505/</guid>
+      <description>&lt;h2 id=&#34;i-dont-believe-in-it&#34;&gt;i don&amp;rsquo;t believe in it.&lt;/h2&gt;&#xA;&lt;p&gt;I know that may come off as strong, and it&amp;rsquo;s not that I don&amp;rsquo;t believe in motivation in of itself. I believe motivation is real, trust me. We&amp;rsquo;ve all experienced the sudden 3am &amp;ldquo;I am going to change the world&amp;rdquo; type of motivation, or the &amp;ldquo;I am going to turn my grades around and finally do all of those overdue assignments&amp;rdquo; type of motivation. It&amp;rsquo;s honestly super common among peers of mine, and people I see in passing. It&amp;rsquo;s not like they don&amp;rsquo;t know they&amp;rsquo;re essentially self sabotaging themselves. Hell, they embrace it and make it part of their personality. I find this to be extremely toxic and harmful in the long run.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Welcome</title>
+      <link>https://tokisuno.github.io/blog/posts/20230429/</link>
+      <pubDate>Sat, 29 Apr 2023 18:23:26 -0400</pubDate>
+      <guid>https://tokisuno.github.io/blog/posts/20230429/</guid>
+      <description>&lt;p&gt;Yo.&lt;/p&gt;&#xA;&lt;p&gt;Going to start using this to write about some things that I am too lazy to make videos about. I feel like people are more inclined to reading things nowadays instead of watching videos. The issue with my videos is they&amp;rsquo;re not TikToks, and they cover topics many find mundane. Hopefully I can circumvent this by making periodic blog posts.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>About me</title>
+      <link>https://tokisuno.github.io/blog/aboutme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tokisuno.github.io/blog/aboutme/</guid>
+      <description>&lt;h2 id=&#34;heading&#34;&gt;:)&lt;/h2&gt;&#xA;&lt;p&gt;Many of you know me as tokisuno, but I also go by Lucas. I am a 22 year old content creator studying linguistics pursuing a masters degree who makes lifestyle/improvement content. I also make videos on tech and other topics I am interested in.&lt;/p&gt;&#xA;&lt;h2 id=&#34;faq&#34;&gt;FAQ&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;birthday: 2002-04-17&lt;/li&gt;&#xA;&lt;li&gt;age: 22&lt;/li&gt;&#xA;&lt;li&gt;height: 173cm&lt;/li&gt;&#xA;&lt;li&gt;major: linguistics&lt;/li&gt;&#xA;&lt;li&gt;phone: as of 2024-04-26, the qin phone f21 pro rooted + flashed with f30 bands&lt;/li&gt;&#xA;&lt;li&gt;linux?: arch&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;linkz&#34;&gt;Linkz&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/tokisuno&#34;&gt;GitHub&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.goodreads.com/user/show/146547946-tokisuno-lucas&#34;&gt;GoodReads&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://youtube.com/tokisuno&#34;&gt;YouTube&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;gaming-profiles&#34;&gt;Gaming profiles&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://chess.com/member/boambomsky&#34;&gt;chess.com&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://etternaonline.com/user/toki&#34;&gt;etterna&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.start.gg/user/78a9b68f&#34;&gt;start.gg&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://osu.ppy.sh/u/tokisuno&#34;&gt;osu!&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>The catalogue</title>
+      <link>https://tokisuno.github.io/blog/equip/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tokisuno.github.io/blog/equip/</guid>
+      <description>&lt;h2 id=&#34;what-i-am-daily-driving-right-now-my-edc&#34;&gt;what i am daily driving right now (my edc)&lt;/h2&gt;&#xA;&lt;p&gt;&lt;em&gt;updated 2024-06-01&lt;/em&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;-my-desk&#34;&gt;@ my desk&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;poto (desktop)&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Specs&lt;/li&gt;&#xA;&lt;li&gt;i7 3770&lt;/li&gt;&#xA;&lt;li&gt;GTX 660&lt;/li&gt;&#xA;&lt;li&gt;16GB RAM&lt;/li&gt;&#xA;&lt;li&gt;500GB SSD&lt;/li&gt;&#xA;&lt;li&gt;Arch Linux w/ Qtile &lt;a href=&#34;https://github.com/tokisuno/.dotfiles&#34;&gt;(dots)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Apple Cinema Monitor 23&amp;quot;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Matte display is kinda goated&lt;/li&gt;&#xA;&lt;li&gt;1920x1200 @ 60hz&lt;/li&gt;&#xA;&lt;li&gt;Fast and responsive touch controls for brightness changing&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;HHKB Pro 2&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;My favourite keyboard to date&lt;/li&gt;&#xA;&lt;li&gt;Bought this for about $180 off buyee.jp&lt;/li&gt;&#xA;&lt;li&gt;Honestly better modding experience than modding normal mechs&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Logi M575 Trackball&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

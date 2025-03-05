@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vim on home</title>
+    <link>https://tokisuno.github.io/blog/tags/vim/</link>
+    <description>Recent content in Vim on home</description>
+    <generator>Hugo</generator>
+    <language>en-ca</language>
+    <lastBuildDate>Wed, 08 May 2024 09:14:32 -0400</lastBuildDate>
+    <atom:link href="https://tokisuno.github.io/blog/tags/vim/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Integrating Zotero with Telescope.nvim</title>
+      <link>https://tokisuno.github.io/blog/posts/zotero-telescope/</link>
+      <pubDate>Wed, 08 May 2024 09:14:32 -0400</pubDate>
+      <guid>https://tokisuno.github.io/blog/posts/zotero-telescope/</guid>
+      <description>&lt;h1 id=&#34;preface&#34;&gt;Preface&lt;/h1&gt;&#xA;&lt;p&gt;This isn&amp;rsquo;t an in-depth guide on how to use Neovim + LaTeX with Zotero integration. This is my explanation of how I set it up, how I sync my citations, and so-on. I will be writing a more in-depth guide in the future regarding this, but that post will come in due time.&lt;/p&gt;&#xA;&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;Zotero is really sick. I love Zotero. If there&amp;rsquo;s anything that I can attribute to making my academic life easier, it&amp;rsquo;s Zotero. Zotero is a personal library/bibliography management program that allows you to add and sort the articles you&amp;rsquo;ve read, add proper metadata to them, and sort them. It makes citation creation infinitely easier &amp;ndash; something that I absolutely &lt;strong&gt;DREADED&lt;/strong&gt; in public schooling. No longer are the days where I have to use ezbib or citationmachine to create a bibliography. With Zotero + LaTeX, that&amp;rsquo;s all done for me!&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
