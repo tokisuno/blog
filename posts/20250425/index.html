@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>I moved to Fedora &#43; I moved back to Alacritty | home</title>
+    <link rel="stylesheet" href="/blog/css/style.css" />
+    <link rel="stylesheet" href="/blog/css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/blog/">home</a></li>
+      
+      <li><a href="/blog/categories/">categories</a></li>
+      
+      <li><a href="/blog/tags/">tags</a></li>
+      
+      <li><a href="/blog/feed.xml">rss</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">I moved to Fedora + I moved back to Alacritty</span></h1>
+
+<h2 class="date">2025/04/25</h2>
+</div>
+
+<main>
+<h1 id="introduction">Introduction</h1>
+<p>The title doesn&rsquo;t lie. I switched off of Arch after praising it for years. Arch has been my main distro for a little over a year now, but after some consideration, I&rsquo;ve realized that Arch really isn&rsquo;t for me and I&rsquo;d be better off using something else. If you can recall correctly, I initially decided to move from Ubuntu to Fedora, but had issues with installing it. I&rsquo;ve come to realize now that these issues could have been fixed pretty quickly, as I had similar issues during this installation of Fedora. But before getting into those, let me outline what I chose to install.</p>
+<h1 id="configuration">Configuration</h1>
+<p>I&rsquo;ve heard pretty good things about Fedora 42, even though I won&rsquo;t be using basically any of the new features that it offers (the main changes I took notice of were all with Gnome) I burned the Xfce spin on a USB, and installed it on both my T460s and my desktop.</p>
+<h1 id="why-i-made-the-change-to-begin-with">Why I made the change to begin with</h1>
+<p>If I am being completely honest, the main issues I had with Arch were all my fault. I made my <code>/</code> partition way too small when installing (200mb LMAO) which meant that updates and installing from the AUR were both a nightmare. I could have just, resized my partition with GParted but after looking at the process I decided against it since it wasn&rsquo;t something I really wanted to do. Even system updates were a nightmare and a half, and don&rsquo;t even get me started on having LaTeX installed. LaTeX and Haskell packages have been my mortal enemy for the past year because of how large they are. I got to the point with my Arch install where I made sure that basically none of my software was installed through the AUR and didn&rsquo;t take up a lot of unnecessary space. Which leads me to the other reason why I found I didn&rsquo;t really need Arch.</p>
+<p>I just don&rsquo;t care that much about using a Rolling Release distrobution. On paper, sure. It&rsquo;s really good and I honestly prefer the model still. But this mindset all changes when you are using an old nvidia GPU. I use a GTX 660, and sometimes upon a new update, my system just doesn&rsquo;t boot because the drivers corrupt. Then I have to reinstall them from the AUR which requires me to build from source, taking an agonising amount of time since my CPU is so old, and then I reboot hoping for xrandr to detect screens on my system. Also, through me going through the pain of minimizing everything I had installed and ensuring I would have enough space in <code>/</code> to make it through the next update, I realized that the amount of software that I used was pretty minimal, and that I actually didn&rsquo;t need a lot. I didn&rsquo;t need to think about having bleeding-edge software because I really don&rsquo;t interact with a lot of software in the first place. I use Neovim, Emacs, Firefox, Alacritty, Discord, and Spotify. I still like having up-to-date recent packages, but I didn&rsquo;t need Arch to accomplish that. That&rsquo;s when I started looking at Fedora again.</p>
+<h1 id="fedora-is-pretty-cool">Fedora is pretty cool</h1>
+<p>Fedora has a very nice installer, uses sensible defaults when partitioning drives (in my experience), and got my system up and running relatively quickly. A pretty major issue at first was with my nvidia drivers, since it automatically installed nouveau and nouveau doesn&rsquo;t support my GPU. But all I had to do was install 2 packages from COPR and that was it. I was done. It didn&rsquo;t even take long either compared to what I had to do on Arch. I had to manually add things to my kernel&rsquo;s loader and then rebuild DKMS modules upon every update. It was a pain. Granted, this probably will still cause issues in the future and I will eventually have to bite the bullet, it&rsquo;s still fine.</p>
+<p>Fedora is also not bleeding-edge, rather cutting-edge instead, which I much prefer for longer-term stability. A big issue I had with Arch was the amount of updates I would get. As I mentioned before, I always had issues updating Arch. I also don&rsquo;t use my laptop too often. This means that when I would eventually want to use my laptop and update, it would take either a short amount of time, or it would take half an hour of me trying to make space and make sure nothing breaks. Fedora does things a bit slower, and I appreciate that. A lot of what I need is in its repos anyways. If I want something more, I can just add another repo without having to go through an AUR. COPR is an equivalent to the AUR, but it is integrated into dnf5 which makes it seemless to install from.</p>
+<h1 id="copr-and-flatpaks">COPR and Flatpaks</h1>
+<p>I&rsquo;ve basically replaced everything I needed the AUR for with flatpaks and COPR. Flatpaks are really nice, and COPR I mentioned before. I just thought I would leave a little note here for this because I use the flatpak for both Spotify and Discord and don&rsquo;t have issues with them at the moment.</p>
+<h1 id="conclusion">Conclusion</h1>
+<p>Most of the issues that I had with Arch were skill issues. Actually, all of them were. But I also just want a system I can get up and running without much hastle. That&rsquo;s why I moved back to Alacritty. I didn&rsquo;t need what Ghostty had to offer. I stopped using custom Firefox CSS because it just added friction when syncing configurations. Basically everything I use is provided in the main repos so as to not create friction when starting up a new system. No compiling from source or half-baked AUR solution. Shit just works, and that&rsquo;s all I need.</p>
+
+</main>
+
+  <footer>
+  
+  
+  <hr/>
+  <a href="https://youtube.com/tokisuno">YouTube</a> | <a href="https://www.goodreads.com/user/show/146547946-tokisuno">Goodreads</a>
+  
+  </footer>
+  </body>
+</html>
+

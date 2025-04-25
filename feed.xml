@@ -6,8 +6,15 @@
     <description>Recent content in Welcome! on home</description>
     <generator>Hugo</generator>
     <language>en-ca</language>
-    <lastBuildDate>Mon, 07 Apr 2025 08:46:12 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 25 Apr 2025 10:34:01 -0400</lastBuildDate>
     <atom:link href="https://tokisuno.github.io/blog/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>I moved to Fedora &#43; I moved back to Alacritty</title>
+      <link>https://tokisuno.github.io/blog/posts/20250425/</link>
+      <pubDate>Fri, 25 Apr 2025 10:34:01 -0400</pubDate>
+      <guid>https://tokisuno.github.io/blog/posts/20250425/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;The title doesn&amp;rsquo;t lie. I switched off of Arch after praising it for years. Arch has been my main distro for a little over a year now, but after some consideration, I&amp;rsquo;ve realized that Arch really isn&amp;rsquo;t for me and I&amp;rsquo;d be better off using something else. If you can recall correctly, I initially decided to move from Ubuntu to Fedora, but had issues with installing it. I&amp;rsquo;ve come to realize now that these issues could have been fixed pretty quickly, as I had similar issues during this installation of Fedora. But before getting into those, let me outline what I chose to install.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>My short experince with learning Esperanto</title>
       <link>https://tokisuno.github.io/blog/posts/20250407/</link>
