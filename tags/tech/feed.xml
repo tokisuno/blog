@@ -6,8 +6,15 @@
     <description>Recent content in Tech on home</description>
     <generator>Hugo</generator>
     <language>en-ca</language>
-    <lastBuildDate>Fri, 25 Apr 2025 10:34:01 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 07 May 2025 08:23:48 -0400</lastBuildDate>
     <atom:link href="https://tokisuno.github.io/blog/tags/tech/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>I&#39;m going back to JavaScript</title>
+      <link>https://tokisuno.github.io/blog/posts/20250507/</link>
+      <pubDate>Wed, 07 May 2025 08:23:48 -0400</pubDate>
+      <guid>https://tokisuno.github.io/blog/posts/20250507/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;The title doesn&amp;rsquo;t lie. I am going back to learning JavaScript. I&amp;rsquo;ve spent a long time going through the Ruby path trying to learn Ruby, and I&amp;rsquo;ve come to the conclusion that I really don&amp;rsquo;t care that much at the moment about Rails.&lt;/p&gt;&#xA;&lt;h1 id=&#34;enjoyment-programming&#34;&gt;Enjoyment programming&lt;/h1&gt;&#xA;&lt;p&gt;I honestly haven&amp;rsquo;t enjoyed the Ruby path that much. During TOP foundations and further into the JS path, I really enjoyed making things and seeing the things that I made. It&amp;rsquo;s because we start by learning HTML/CSS/JS and then get to choose what we want to do from there. That&amp;rsquo;s fine and all, but I didn&amp;rsquo;t get nearly as much satisfaction or enjoyment doing the projects in the Ruby path as I was when doing the JavaScript path. There are a lot of things that I do really like about Ruby, but I feel like I really just need JavaScript&amp;rsquo;s ecosystem for the foreseeable future. I was in a relationship for almost a year, and during that time I wanted to have some sort of stability in my very chaotic shitshow of a life, so I thought that I could control that by using a language that is seemingly &amp;ldquo;meant for programmer happiness&amp;rdquo; and stability. I wanted to have some sort of job where I could work from anywhere just maintaining older code and living like a retired old person. But now that the relationship has ended and I am getting further back into programming, I realized that I haven&amp;rsquo;t been enjoying programming in Ruby as much as I thought I was.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>I moved to Fedora &#43; I moved back to Alacritty</title>
       <link>https://tokisuno.github.io/blog/posts/20250425/</link>
