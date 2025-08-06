@@ -2,28 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://tokisuno.github.io/blog/categories/</loc>
+    <lastmod>2025-08-04T13:19:38-04:00</lastmod>
+  </url><url>
+    <loc>https://tokisuno.github.io/blog/tags/life/</loc>
+    <lastmod>2025-08-04T13:19:38-04:00</lastmod>
+  </url><url>
+    <loc>https://tokisuno.github.io/blog/categories/personal/</loc>
+    <lastmod>2025-08-04T13:19:38-04:00</lastmod>
+  </url><url>
     <loc>https://tokisuno.github.io/blog/posts/</loc>
+    <lastmod>2025-08-04T13:19:38-04:00</lastmod>
+  </url><url>
+    <loc>https://tokisuno.github.io/blog/tags/</loc>
+    <lastmod>2025-08-04T13:19:38-04:00</lastmod>
+  </url><url>
+    <loc>https://tokisuno.github.io/blog/posts/20250804/</loc>
+    <lastmod>2025-08-04T13:19:38-04:00</lastmod>
+  </url><url>
+    <loc>https://tokisuno.github.io/blog/categories/weekly/</loc>
     <lastmod>2025-08-04T13:19:38-04:00</lastmod>
   </url><url>
     <loc>https://tokisuno.github.io/blog/</loc>
     <lastmod>2025-08-04T13:19:38-04:00</lastmod>
   </url><url>
-    <loc>https://tokisuno.github.io/blog/categories/</loc>
-    <lastmod>2025-07-31T09:03:47-04:00</lastmod>
-  </url><url>
-    <loc>https://tokisuno.github.io/blog/tags/life/</loc>
-    <lastmod>2025-07-31T09:03:47-04:00</lastmod>
-  </url><url>
-    <loc>https://tokisuno.github.io/blog/categories/personal/</loc>
-    <lastmod>2025-07-31T09:03:47-04:00</lastmod>
-  </url><url>
-    <loc>https://tokisuno.github.io/blog/tags/</loc>
-    <lastmod>2025-07-31T09:03:47-04:00</lastmod>
-  </url><url>
     <loc>https://tokisuno.github.io/blog/posts/20250731/</loc>
-    <lastmod>2025-07-31T09:03:47-04:00</lastmod>
-  </url><url>
-    <loc>https://tokisuno.github.io/blog/categories/weekly/</loc>
     <lastmod>2025-07-31T09:03:47-04:00</lastmod>
   </url><url>
     <loc>https://tokisuno.github.io/blog/posts/20250723/</loc>
