@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Toki Talks - I abandoned AwesomeWM... | home</title>
+    <link rel="stylesheet" href="/blog/css/style.css" />
+    <link rel="stylesheet" href="/blog/css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/blog/">home</a></li>
+      
+      <li><a href="/blog/categories/">categories</a></li>
+      
+      <li><a href="/blog/tags/">tags</a></li>
+      
+      <li><a href="/blog/feed.xml">rss</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">Toki Talks - I abandoned AwesomeWM&hellip;</span></h1>
+
+<h2 class="date">2025/08/26</h2>
+</div>
+
+<main>
+<h1 id="introduction">Introduction</h1>
+<p>Welcome to this week&rsquo;s installment of Toki Talks! I know that my video last week was supposed to cement/solidify that I am all about stability and simplicity instead of experimentation. With that being said, I left AwesomeWM.</p>
+<h1 id="why-i-left-awesomewm">Why I left AwesomeWM&hellip;</h1>
+<p>To be quite honest, Awesome is much more than &ldquo;just a window manager&rdquo;. It&rsquo;s a way of life. I mean this in the sense that the whole window manager feels less like a window manager and more like a customization framework. That&rsquo;s cool and all, but it&rsquo;s done in Lua, and the way that it&rsquo;s implemented is probably really nice if you LIKE writing in Lua, and REALLY want to have total control over your environment. I used Awesome as a better OOTB DWM experience, and I can safely say that it does a good job of doing that.</p>
+<p>Going back to Lua, I am indifferent to it, but holy hell the syntax/formatting is ugly as all hell. Especially in the default rc.lua, which is the first taste of Lua you get when first using this window manager. I&rsquo;ll say it right now, I can see Awesome turning away a lot of people who want to experiment with it. This I believe isn&rsquo;t for most people though. I am not one of those people.</p>
+<p>Let&rsquo;s look at how Awesome defines tag-switching:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">9</span> <span style="color:#66d9ef">do</span>
+</span></span><span style="display:flex;"><span>    globalkeys <span style="color:#f92672">=</span> gears.table.join(globalkeys,
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">-- View tag only.</span>
+</span></span><span style="display:flex;"><span>        awful.key({ modkey }, <span style="color:#e6db74">&#34;#&#34;</span> <span style="color:#f92672">..</span> i <span style="color:#f92672">+</span> <span style="color:#ae81ff">9</span>,
+</span></span><span style="display:flex;"><span>                  <span style="color:#66d9ef">function</span> ()
+</span></span><span style="display:flex;"><span>                        <span style="color:#66d9ef">local</span> screen <span style="color:#f92672">=</span> awful.screen.focused()
+</span></span><span style="display:flex;"><span>                        <span style="color:#66d9ef">local</span> tag <span style="color:#f92672">=</span> screen.tags[i]
+</span></span><span style="display:flex;"><span>                        <span style="color:#66d9ef">if</span> tag <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>                           tag:view_only()
+</span></span><span style="display:flex;"><span>                        <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>                  <span style="color:#66d9ef">end</span>,
+</span></span><span style="display:flex;"><span>                  {description <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;view tag #&#34;</span><span style="color:#f92672">..</span>i, group <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;tag&#34;</span>}),
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">-- Toggle tag display.</span>
+</span></span><span style="display:flex;"><span>        awful.key({ modkey, <span style="color:#e6db74">&#34;Control&#34;</span> }, <span style="color:#e6db74">&#34;#&#34;</span> <span style="color:#f92672">..</span> i <span style="color:#f92672">+</span> <span style="color:#ae81ff">9</span>,
+</span></span><span style="display:flex;"><span>                  <span style="color:#66d9ef">function</span> ()
+</span></span><span style="display:flex;"><span>                      <span style="color:#66d9ef">local</span> screen <span style="color:#f92672">=</span> awful.screen.focused()
+</span></span><span style="display:flex;"><span>                      <span style="color:#66d9ef">local</span> tag <span style="color:#f92672">=</span> screen.tags[i]
+</span></span><span style="display:flex;"><span>                      <span style="color:#66d9ef">if</span> tag <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>                         awful.tag.viewtoggle(tag)
+</span></span><span style="display:flex;"><span>                      <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>                  <span style="color:#66d9ef">end</span>,
+</span></span><span style="display:flex;"><span>                  {description <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;toggle tag #&#34;</span> <span style="color:#f92672">..</span> i, group <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;tag&#34;</span>}),
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">-- Move client to tag.</span>
+</span></span><span style="display:flex;"><span>        awful.key({ modkey, <span style="color:#e6db74">&#34;Shift&#34;</span> }, <span style="color:#e6db74">&#34;#&#34;</span> <span style="color:#f92672">..</span> i <span style="color:#f92672">+</span> <span style="color:#ae81ff">9</span>,
+</span></span><span style="display:flex;"><span>                  <span style="color:#66d9ef">function</span> ()
+</span></span><span style="display:flex;"><span>                      <span style="color:#66d9ef">if</span> client.focus <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>                          <span style="color:#66d9ef">local</span> tag <span style="color:#f92672">=</span> client.focus.screen.tags[i]
+</span></span><span style="display:flex;"><span>                          <span style="color:#66d9ef">if</span> tag <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>                              client.focus:move_to_tag(tag)
+</span></span><span style="display:flex;"><span>                          <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>                     <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>                  <span style="color:#66d9ef">end</span>,
+</span></span><span style="display:flex;"><span>                  {description <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;move focused client to tag #&#34;</span><span style="color:#f92672">..</span>i, group <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;tag&#34;</span>}),
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e">-- Toggle tag on focused client.</span>
+</span></span><span style="display:flex;"><span>        awful.key({ modkey, <span style="color:#e6db74">&#34;Control&#34;</span>, <span style="color:#e6db74">&#34;Shift&#34;</span> }, <span style="color:#e6db74">&#34;#&#34;</span> <span style="color:#f92672">..</span> i <span style="color:#f92672">+</span> <span style="color:#ae81ff">9</span>,
+</span></span><span style="display:flex;"><span>                  <span style="color:#66d9ef">function</span> ()
+</span></span><span style="display:flex;"><span>                      <span style="color:#66d9ef">if</span> client.focus <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>                          <span style="color:#66d9ef">local</span> tag <span style="color:#f92672">=</span> client.focus.screen.tags[i]
+</span></span><span style="display:flex;"><span>                          <span style="color:#66d9ef">if</span> tag <span style="color:#66d9ef">then</span>
+</span></span><span style="display:flex;"><span>                              client.focus:toggle_tag(tag)
+</span></span><span style="display:flex;"><span>                          <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>                      <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>                  <span style="color:#66d9ef">end</span>,
+</span></span><span style="display:flex;"><span>                  {description <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;toggle focused client on tag #&#34;</span> <span style="color:#f92672">..</span> i, group <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;tag&#34;</span>})
+</span></span><span style="display:flex;"><span>    )
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span></code></pre></div><p>Let&rsquo;s look at how defining keymaps looks like too.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>lientkeys <span style="color:#f92672">=</span> gears.table.join(
+</span></span><span style="display:flex;"><span>    awful.key({ modkey,           }, <span style="color:#e6db74">&#34;f&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">function</span> (c)
+</span></span><span style="display:flex;"><span>            c.fullscreen <span style="color:#f92672">=</span> <span style="color:#f92672">not</span> c.fullscreen
+</span></span><span style="display:flex;"><span>            c:raise()
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">end</span>,
+</span></span><span style="display:flex;"><span>        {description <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;toggle fullscreen&#34;</span>, group <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;client&#34;</span>}),
+</span></span><span style="display:flex;"><span>    awful.key({ modkey, <span style="color:#e6db74">&#34;Shift&#34;</span>   }, <span style="color:#e6db74">&#34;c&#34;</span>,      <span style="color:#66d9ef">function</span> (c) c:kill()                         <span style="color:#66d9ef">end</span>,
+</span></span><span style="display:flex;"><span>              {description <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;close&#34;</span>, group <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;client&#34;</span>}),
+</span></span><span style="display:flex;"><span>    awful.key({ modkey, <span style="color:#e6db74">&#34;Control&#34;</span> }, <span style="color:#e6db74">&#34;space&#34;</span>,  awful.client.floating.toggle                     ,
+</span></span><span style="display:flex;"><span>              {description <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;toggle floating&#34;</span>, group <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;client&#34;</span>}),
+</span></span><span style="display:flex;"><span>    awful.key({ modkey, <span style="color:#e6db74">&#34;Control&#34;</span> }, <span style="color:#e6db74">&#34;Return&#34;</span>, <span style="color:#66d9ef">function</span> (c) c:swap(awful.client.getmaster()) <span style="color:#66d9ef">end</span>,
+</span></span><span style="display:flex;"><span>              {description <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;move to master&#34;</span>, group <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;client&#34;</span>}),
+</span></span><span style="display:flex;"><span>    awful.key({ modkey,           }, <span style="color:#e6db74">&#34;o&#34;</span>,      <span style="color:#66d9ef">function</span> (c) c:move_to_screen()               <span style="color:#66d9ef">end</span>,
+</span></span><span style="display:flex;"><span>              {description <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;move to screen&#34;</span>, group <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;client&#34;</span>}),
+</span></span><span style="display:flex;"><span>    awful.key({ modkey,           }, <span style="color:#e6db74">&#34;t&#34;</span>,      <span style="color:#66d9ef">function</span> (c) c.ontop <span style="color:#f92672">=</span> <span style="color:#f92672">not</span> c.ontop            <span style="color:#66d9ef">end</span>,
+</span></span><span style="display:flex;"><span>              {description <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;toggle keep on top&#34;</span>, group <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;client&#34;</span>}),
+</span></span><span style="display:flex;"><span>    awful.key({ modkey,           }, <span style="color:#e6db74">&#34;n&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">function</span> (c)
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e">-- The client currently has the input focus, so it cannot be</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e">-- minimized, since minimized clients can&#39;t have the focus.</span>
+</span></span><span style="display:flex;"><span>            c.minimized <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">end</span> ,
+</span></span><span style="display:flex;"><span>        {description <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;minimize&#34;</span>, group <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;client&#34;</span>}),
+</span></span><span style="display:flex;"><span>    ...
+</span></span></code></pre></div><p>This is ugly as hell. I hate the empty space, I hate the indentation, I hate when programmers try to format their code to make it more &ldquo;readable&rdquo; and to follow a consistent structure. It just makes it look worse to me. It&rsquo;s weird obfuscation that makes it harder to read this. Just to be clear. I can read this. I understand what this is doing. It&rsquo;s just a lot of visual clutter that I don&rsquo;t want to deal with when either reading or writing code, especially something as important as the window manager I use.</p>
+<p>During some other time of me using Awesome, I did take the time to reformat EVERY SINGLE <code>awful.key()</code> mapping. The syntax just feels and looks abysmal, even with treesitter. I know that this is all personal preference, but due to the fact that Lua only has ONE data structure (a table) makes Lua both very flexible, but also a pain in the ass. This is coming from someone pretty normie-pilled and uses tabstop=2 instead of tabstop=4. I think the point of all of this is this: I don&rsquo;t want to have to configure my window manager or workflow all that often. BUT I still want to be able to quickly hack away at it and add what I would like to it WHEN I want to without having to go through the headache of both reading a large amount of Lua, and figuring what the hell is going on with that said Lua.</p>
+<h1 id="resistance-is-futile-so-im-back-on-qtile">Resistance is futile, so I&rsquo;m back on Qtile.</h1>
+<p>Qtile is configured in Python, which makes some believe that it&rsquo;s a slow window manager. I will say with 100% confidence that I have NEVER had a slow-down due to the performance on Python. It&rsquo;s not even fully written in Python either. It&rsquo;s still written in C, just like almost every other WM, but has its configuration language set to Python. It is written in C, but has Python bindings. Let&rsquo;s look at the Qtile equivalents for the two examples above.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> groups:
+</span></span><span style="display:flex;"><span>    keys<span style="color:#f92672">.</span>extend(
+</span></span><span style="display:flex;"><span>        [
+</span></span><span style="display:flex;"><span>            Key(
+</span></span><span style="display:flex;"><span>                [mod],
+</span></span><span style="display:flex;"><span>                i<span style="color:#f92672">.</span>name,
+</span></span><span style="display:flex;"><span>                lazy<span style="color:#f92672">.</span>group[i<span style="color:#f92672">.</span>name]<span style="color:#f92672">.</span>toscreen(),
+</span></span><span style="display:flex;"><span>                desc<span style="color:#f92672">=</span><span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Switch to group </span><span style="color:#e6db74">{</span>i<span style="color:#f92672">.</span>name<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>,
+</span></span><span style="display:flex;"><span>            ),
+</span></span><span style="display:flex;"><span>            Key(
+</span></span><span style="display:flex;"><span>                [mod, <span style="color:#e6db74">&#34;shift&#34;</span>],
+</span></span><span style="display:flex;"><span>                i<span style="color:#f92672">.</span>name,
+</span></span><span style="display:flex;"><span>                lazy<span style="color:#f92672">.</span>window<span style="color:#f92672">.</span>togroup(i<span style="color:#f92672">.</span>name, switch_group<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>),
+</span></span><span style="display:flex;"><span>                desc<span style="color:#f92672">=</span><span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Switch to &amp; move focused window to group </span><span style="color:#e6db74">{</span>i<span style="color:#f92672">.</span>name<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>,
+</span></span><span style="display:flex;"><span>            ),
+</span></span><span style="display:flex;"><span>        ]
+</span></span><span style="display:flex;"><span>    )
+</span></span></code></pre></div><p>Alright, already more clean to read. How about defining keymaps?</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>keys <span style="color:#f92672">=</span> [
+</span></span><span style="display:flex;"><span>    Key([mod], <span style="color:#e6db74">&#34;h&#34;</span>, lazy<span style="color:#f92672">.</span>layout<span style="color:#f92672">.</span>left(), desc<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Move focus to left&#34;</span>),
+</span></span><span style="display:flex;"><span>    Key([mod], <span style="color:#e6db74">&#34;l&#34;</span>, lazy<span style="color:#f92672">.</span>layout<span style="color:#f92672">.</span>right(), desc<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Move focus to right&#34;</span>),
+</span></span><span style="display:flex;"><span>    Key([mod], <span style="color:#e6db74">&#34;j&#34;</span>, lazy<span style="color:#f92672">.</span>layout<span style="color:#f92672">.</span>down(), desc<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Move focus down&#34;</span>),
+</span></span><span style="display:flex;"><span>    Key([mod], <span style="color:#e6db74">&#34;k&#34;</span>, lazy<span style="color:#f92672">.</span>layout<span style="color:#f92672">.</span>up(), desc<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Move focus up&#34;</span>),
+</span></span><span style="display:flex;"><span>    Key([mod], <span style="color:#e6db74">&#34;space&#34;</span>, lazy<span style="color:#f92672">.</span>layout<span style="color:#f92672">.</span>next(), desc<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Move window focus to other window&#34;</span>),
+</span></span><span style="display:flex;"><span>]
+</span></span></code></pre></div><p>That&rsquo;s it. It&rsquo;s just one array. It&rsquo;s not overly complicated, and it doesn&rsquo;t by default expose multiple libraries to the end-user that they most likely won&rsquo;t end up using. I had my hiccoughs with Qtile in the past, but going back to something that&rsquo;s so easy and just works feels really nice. You can literally just hack together whatever script you want into the bar and it works flawlessly.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>                widget<span style="color:#f92672">.</span>GenPollText(
+</span></span><span style="display:flex;"><span>                    name<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;minutesleft&#39;</span>,
+</span></span><span style="display:flex;"><span>                    update_interval<span style="color:#f92672">=</span><span style="color:#ae81ff">60</span>,
+</span></span><span style="display:flex;"><span>                    fmt<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;(Only </span><span style="color:#e6db74">{}</span><span style="color:#e6db74"> minutes left!)&#39;</span>,
+</span></span><span style="display:flex;"><span>                    func<span style="color:#f92672">=</span><span style="color:#66d9ef">lambda</span>: subprocess<span style="color:#f92672">.</span>check_output(
+</span></span><span style="display:flex;"><span>                        os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>expanduser(<span style="color:#e6db74">&#39;~/code/builds/goltime/bin/goltime&#39;</span>)
+</span></span><span style="display:flex;"><span>                        )<span style="color:#f92672">.</span>decode(<span style="color:#e6db74">&#39;utf-8&#39;</span>)<span style="color:#f92672">.</span>strip(),
+</span></span><span style="display:flex;"><span>                    ),
+</span></span></code></pre></div><p>I was able to bring back this part of my bar without having to spend an entire day figuring out how to make a widget in Awesome.</p>
+<h1 id="what-this-all-boils-down-to">What this all boils down to</h1>
+<p>I think at the end of the day. This all boils down to both preference and skill issues. I am not a good programmer by any stretch of the imagination, and I have certain criteria that have to be met in my head in order for things to function. I just didn&rsquo;t end up liking Awesome that much, and since I see myself moving to Wayland in the future, it would be nice to have a window manager that works on BOTH x11 and wayland. That&rsquo;s the kind of compatibility that I really like about Qtile. I can just use Qtile, and not have to think about using ANYTHING else.</p>
+<h1 id="conclusion">Conclusion</h1>
+<p>That&rsquo;s all for this week. Thanks for sticking by! If you have any questions, please contact me through Discord or my Email address linked in the contacts page of my website. Bye bye!</p>
+
+</main>
+
+  <footer>
+  
+  
+  <hr/>
+  <a href="https://youtube.com/tokisuno">YouTube</a> | <a href="https://www.goodreads.com/user/show/146547946-tokisuno">Goodreads</a>
+  
+  </footer>
+  </body>
+</html>
+

@@ -6,8 +6,15 @@
     <description>Recent content in Weekly on home</description>
     <generator>Hugo</generator>
     <language>en-ca</language>
-    <lastBuildDate>Tue, 19 Aug 2025 08:31:28 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 26 Aug 2025 09:32:52 -0400</lastBuildDate>
     <atom:link href="https://tokisuno.github.io/blog/categories/weekly/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Toki Talks - I abandoned AwesomeWM...</title>
+      <link>https://tokisuno.github.io/blog/posts/20250826/</link>
+      <pubDate>Tue, 26 Aug 2025 09:32:52 -0400</pubDate>
+      <guid>https://tokisuno.github.io/blog/posts/20250826/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;&#xA;&lt;p&gt;Welcome to this week&amp;rsquo;s installment of Toki Talks! I know that my video last week was supposed to cement/solidify that I am all about stability and simplicity instead of experimentation. With that being said, I left AwesomeWM.&lt;/p&gt;&#xA;&lt;h1 id=&#34;why-i-left-awesomewm&#34;&gt;Why I left AwesomeWM&amp;hellip;&lt;/h1&gt;&#xA;&lt;p&gt;To be quite honest, Awesome is much more than &amp;ldquo;just a window manager&amp;rdquo;. It&amp;rsquo;s a way of life. I mean this in the sense that the whole window manager feels less like a window manager and more like a customization framework. That&amp;rsquo;s cool and all, but it&amp;rsquo;s done in Lua, and the way that it&amp;rsquo;s implemented is probably really nice if you LIKE writing in Lua, and REALLY want to have total control over your environment. I used Awesome as a better OOTB DWM experience, and I can safely say that it does a good job of doing that.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Toki Talks - Obscure YouTubers I Remember</title>
       <link>https://tokisuno.github.io/blog/posts/20250819/</link>
