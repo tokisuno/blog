@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Spanish on home</title>
+    <link>http://localhost:1313/blog/tags/spanish/</link>
+    <description>Recent content in Spanish on home</description>
+    <generator>Hugo</generator>
+    <language>en-ca</language>
+    <lastBuildDate>Sun, 12 May 2024 10:23:53 -0400</lastBuildDate>
+    <atom:link href="http://localhost:1313/blog/tags/spanish/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>20240512</title>
+      <link>http://localhost:1313/blog/posts/20240512/</link>
+      <pubDate>Sun, 12 May 2024 10:23:53 -0400</pubDate>
+      <guid>http://localhost:1313/blog/posts/20240512/</guid>
+      <description>&lt;h1 id=&#34;introducción&#34;&gt;Introducción&lt;/h1&gt;&#xA;&lt;p&gt;Buenas. De verdad no sé como escribir este artículo en español pero, ya. Quisiera escribir una introducción completamente en español para los que no hablan inglés porque, hay hispanohablantes que vean mis vídeos sin entender. Diría lo mismo con los que hablan portugués pero se me facilita más escribir en español e inglés.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

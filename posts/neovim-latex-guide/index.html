@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+  <head><script src="/blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=blog/livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Neovim &#43; LaTeX &#43; Linguistics | home</title>
+    <link rel="stylesheet" href="/blog/css/style.css" />
+    <link rel="stylesheet" href="/blog/css/fonts.css" />
+    
+  </head>
+
+  <body>
+    <nav>
+    <ul class="menu">
+      
+      <li><a href="/blog/">home</a></li>
+      
+      <li><a href="/blog/categories/">categories</a></li>
+      
+      <li><a href="/blog/tags/">tags</a></li>
+      
+      <li><a href="/blog/feed.xml">rss</a></li>
+      
+    </ul>
+    <hr/>
+    </nav>
+
+<div class="article-meta">
+<h1><span class="title">Neovim + LaTeX + Linguistics</span></h1>
+
+<h2 class="date">2024/05/08</h2>
+</div>
+
+<main>
+<p><em>This is the first in a series of informational posts where I create technical write-ups on things I either find interesting or use on a daily basis.</em></p>
+<h1 id="preface">Preface</h1>
+<p>Although this is a guide on how to use and install my Neovim configuration, this isn&rsquo;t really an in-depth guide on how to use all the individual tools as that would take a really long time, and this already-large text would become even more overwhelming to others. There are plenty of resources online that explain how to use vimtex and vim-latex-live-preview so I will link guides throughout this post.</p>
+<h1 id="introduction">Introduction</h1>
+<p>This write-up is a beginner-friendly guide to how to install and use the Neovim configuration I use for LaTeX and Linguistics course work. I am a Linguistics major (if that isn&rsquo;t already obvious) and I&rsquo;ve been using vim since my second year of undergrad. My only reason being was that I switched to using a laptop that was so old that modern text-editors felt too sluggish for a lot of my needs. So with that, I used vim &ndash; eventually switching over to Neovim.</p>
+<p>The configuration shown here uses about ~35 plugins total for various things. I try to keep my installation on the lighter-side without too many bells and whistles to ensure smooth stable performance. I lazy-load my heavy plugins because of this.</p>
+<h2 id="short-forms-i-use-in-this-article">Short-forms I use in this article</h2>
+<ul>
+<li>dir = directory/folder</li>
+<li>cd = change directory (go to x dir)</li>
+<li>nvim = Neovim/neovim</li>
+<li>vim = vim/nvim (i explicitly refer to nvim as the editor, and vim as both the editor and the vim-motions)</li>
+</ul>
+<h1 id="who-this-guide-is-for">Who this guide is for</h1>
+<ul>
+<li>People who are migrating their .vimrc -&gt; init.lua
+<ul>
+<li>I will not explain how to convert your .vimrc. This guide is for <strong>Neovim</strong>, not vim.</li>
+</ul>
+</li>
+<li>People who already know how to use vim/nvim</li>
+<li>People who are familiar with how the terminal works</li>
+<li>People who are into writing with LaTeX</li>
+<li>People who are linguists/future linguists who know how to use vim</li>
+<li>Linguists who have their own Neovim + LaTeX setup who are looking for inspiration!</li>
+</ul>
+<h1 id="requirements">Requirements</h1>
+<p>You need to have some level of vim knowledge. I mean it. There are a lot of people who will waste their time trying to go through the installation and setup process for the tools in this tutorial but will never use them because they don&rsquo;t even know how to exit vim. Vim is a skill in of itself, so if this is your first time using vim, this isn&rsquo;t the place to be. Please learn the basics and know how to edit your .vimrc/init.lua config before anything please.</p>
+<p>Although this is worded as a <em>beginner-friendly guide</em>, this will be mainly targeted towards Linux/MacOS users. I don&rsquo;t use MacOS right now but I know it&rsquo;s Unix based so the file structure for the configuration and everything should work fine. I will also be assuming that you have some level of knowledge of how to use the terminal. If you know how to change directories and edit files, you&rsquo;re fine.</p>
+<p>Also make sure that your Neovim version was compiled with Python3 support, since that&rsquo;s essential for later sections of this guide.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>      /<span style="color:#ae81ff">\ </span>            USER poto
+</span></span><span style="display:flex;"><span>     /  <span style="color:#ae81ff">\ </span>             OS Arch Linux
+</span></span><span style="display:flex;"><span>    /<span style="color:#ae81ff">\ </span>  <span style="color:#ae81ff">\ </span>        KERNEL 6.8.7-arch1-1
+</span></span><span style="display:flex;"><span>   /      <span style="color:#ae81ff">\ </span>       UPTIME 149h 6m
+</span></span><span style="display:flex;"><span>  /   ,,   <span style="color:#ae81ff">\ </span>       SHELL bash
+</span></span><span style="display:flex;"><span> /   |  |  -<span style="color:#ae81ff">\ </span>       PKGS <span style="color:#ae81ff">1750</span>
+</span></span><span style="display:flex;"><span>/_-<span style="color:#e6db74">&#39;&#39;</span>    <span style="color:#e6db74">&#39;&#39;</span>-_<span style="color:#ae81ff">\
+</span></span></span></code></pre></div><h1 id="organization">Organization</h1>
+<p>This is going to be organized in a few parts:
+TBD</p>
+<h1 id="neovim">Neovim</h1>
+<h2 id="installing-neovim">Installing Neovim</h2>
+<p>As mentioned earlier, I am assuming you have some sort of idea of how to use the terminal. Open your terminal of choice and type in the following</p>
+<pre><code>sudo pacman -S nvim
+</code></pre>
+<p>It should install the latest version of Neovim (which for me on Arch is 0.9.5). Now while still in your terminal, type <code>nvim</code>. Congrats, you&rsquo;re greeted with nvim! That&rsquo;s it. You now have Neovim installed onto your system. Tutorial over! /s</p>
+<p>If you have never configured Neovim before. It can seem very daunting. There are files everywhere and you only know how to use hjkl &ndash; it&rsquo;s intimidating. I get it. We&rsquo;re going to work through this.</p>
+<h2 id="cloning-my-config">Cloning my config</h2>
+<h2 id="navigating-to-your-config">Navigating to your config</h2>
+<p>The first thing you should do is navigate over to your <code>$XDG_CONFIG_HOME</code>, which on most Unix systems is located at <code>$HOME/.config</code>. If you don&rsquo;t have this directory (which I think is likely if you use a MacOS machine), you&rsquo;re going to have to make it. Make sure you&rsquo;re in your <code>$HOME</code> directory. If you don&rsquo;t know if you&rsquo;re in it or not, just type <code>cd</code> into your terminal and that&rsquo;ll take you back to it. Now type <code>mkdir .config/</code> while in your <code>$HOME</code>. Next, (c)hange (d)irectories (cd<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>) into your <code>.config/</code> folder by typing <code>cd ~/.config/</code>. The <code>~/</code> in front of <code>.config/</code> is something you may have never seen before. <code>~/</code> is basically another way of saying <code>$HOME</code> when navigating. Don&rsquo;t worry about it too much if it seems scary. If you already have an nvim configuration but still want to try out/go through my config, click <a href="https://github.com/tokisuno/nvim">here</a> to view them online. If you want to use them on a local system, make sure you&rsquo;re in <code>~/.config/</code> and there&rsquo;s no other nvim folder in the dir. Now, run the following: <code>git clone https://github.com/tokisuno/nvim.git nvim/</code>. This creates a copy of my configuration and puts it onto your computer.</p>
+<p>If the git status is making your shell slow, while in <code>~/.config/nvim</code>, <strong>AND MAKE SURE YOU&rsquo;RE IN THERE</strong>, type <code>rm -rf .git</code>. This just de-initializes the folder for git version control.</p>
+<h1 id="explaining-the-important-stuff">Explaining the important stuff</h1>
+<p>This section is going to cover the important files that you&rsquo;ll need to be somewhat familiar with to make your own changes in in the future.</p>
+<h2 id="confignvim">~/.config/nvim/</h2>
+<p>The file that kick-starts this all is <code>init.lua</code> which is only 3 lines long.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>vim.g.mapleader <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34; &#34;</span>
+</span></span><span style="display:flex;"><span>vim.g.maplocalleader <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;,&#34;</span>
+</span></span><span style="display:flex;"><span>require(<span style="color:#e6db74">&#34;lucas&#34;</span>)
+</span></span></code></pre></div><p>All what this file does is bind the two leader keys nvim needs to function, and calls this <code>require()</code> function to the module <code>&quot;lucas&quot;</code>. What that is will be explained in just a second.</p>
+<h2 id="confignvimlua">~/.config/nvim/lua/</h2>
+<p>There&rsquo;s just one folder in here called <code>lucas</code>. This is the root folder of my nvim configuration! It may seem weird, but the reason I set it up like this was so then anyone could go through my dotfiles and have a basic understanding of what everything does without feeling too intimidated. If you have your own configuration that&rsquo;s in a similar style to this, all you have to do is import my config remove the <code>require()</code> flag for your own, and that&rsquo;s all!</p>
+<p>I don&rsquo;t really run anything fancy in here.</p>
+<h2 id="confignvimlualucas">~/.config/nvim/lua/lucas/</h2>
+<p>This is where the real configuration is.</p>
+<h3 id="initlua">init.lua</h3>
+<p>All this does is load the other configuration files. The <code>lazy/</code> folder that&rsquo;s in here is automatically read by lazy.nvim when nvim is run, so that doesn&rsquo;t have to be called. Lazy.nvim runs through the <code>lazy-config.lua/</code> file, which is called on the first line. Lazy is our plugin manager, so if you&rsquo;re confused, that&rsquo;s all you need to know about it.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>require(<span style="color:#e6db74">&#39;lucas.lazy-config&#39;</span>)
+</span></span><span style="display:flex;"><span>require(<span style="color:#e6db74">&#39;lucas.set&#39;</span>)
+</span></span><span style="display:flex;"><span>require(<span style="color:#e6db74">&#39;lucas.keymaps&#39;</span>)
+</span></span><span style="display:flex;"><span>require(<span style="color:#e6db74">&#39;luasnip.loaders.from_lua&#39;</span>).lazy_load({paths <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;~/.config/nvim/lua/lucas/LuaSnip/&#39;</span>})
+</span></span></code></pre></div><h3 id="setlua">set.lua</h3>
+<p>There&rsquo;s not a whole lot in here that needs explaining.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#75715e">--- ...</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">--- ...</span>
+</span></span><span style="display:flex;"><span>vim.cmd(<span style="color:#e6db74">&#39;syntax on&#39;</span>)
+</span></span><span style="display:flex;"><span>vim.cmd(<span style="color:#e6db74">&#39;syntax enable&#39;</span>)
+</span></span><span style="display:flex;"><span>vim.cmd(<span style="color:#e6db74">&#39;filetype plugin on&#39;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#75715e">--- ...</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">--- ...</span>
+</span></span></code></pre></div><p>Just know that these are important and shouldn&rsquo;t be turned off. There is more to the file as you will see by looking at it, but I think it is mostly self-explanatory. If anyone has any questions as to what things do, just hit me up on Discord and I&rsquo;ll be happy to help :)</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span><span style="color:#66d9ef">local</span> augroup <span style="color:#f92672">=</span> vim.api.nvim_create_augroup
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">local</span> autocmd <span style="color:#f92672">=</span> vim.api.nvim_create_autocmd
+</span></span><span style="display:flex;"><span><span style="color:#75715e">--- ... skip skip skip</span>
+</span></span><span style="display:flex;"><span>augroup(<span style="color:#e6db74">&#39;nocol&#39;</span>, { clear <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span> })
+</span></span><span style="display:flex;"><span>autocmd(<span style="color:#e6db74">&#34;Filetype&#34;</span>, {
+</span></span><span style="display:flex;"><span>  group <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;nocol&#39;</span>,
+</span></span><span style="display:flex;"><span>  pattern <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;markdown&#34;</span>, <span style="color:#e6db74">&#34;latex&#34;</span>},
+</span></span><span style="display:flex;"><span>  command <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;setlocal cc=0&#34;</span>
+</span></span><span style="display:flex;"><span>})
+</span></span></code></pre></div><p>If you have used vim before and use the colorcolumn, this is an autocmd that hides it when you&rsquo;re in either a markdown or latex file. Really useful and has saved me a lot of time typing this in manually every time I am in a markdown/latex project :')</p>
+<p>This is the last autocmd that I use and I think it&rsquo;s probably the most useful.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>augroup(<span style="color:#e6db74">&#39;set_wrap&#39;</span>, { clear <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span> })
+</span></span><span style="display:flex;"><span>autocmd(<span style="color:#e6db74">&#39;FileType&#39;</span>, {
+</span></span><span style="display:flex;"><span>  group <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;set_wrap&#39;</span>,
+</span></span><span style="display:flex;"><span>  pattern <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;gitcommit&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;markdown&#39;</span>,
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#39;text&#39;</span>,
+</span></span><span style="display:flex;"><span>  },
+</span></span><span style="display:flex;"><span>  callback <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>()
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">local</span> opts <span style="color:#f92672">=</span> { noremap <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>, silent <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span> }
+</span></span><span style="display:flex;"><span>    vim.opt_local.spell <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>    vim.opt_local.wrap <span style="color:#f92672">=</span> <span style="color:#66d9ef">true</span>
+</span></span><span style="display:flex;"><span>    vim.api.nvim_buf_set_keymap(<span style="color:#ae81ff">0</span>, <span style="color:#e6db74">&#39;n&#39;</span>, <span style="color:#e6db74">&#39;j&#39;</span>, <span style="color:#e6db74">&#39;gj&#39;</span>, opts)
+</span></span><span style="display:flex;"><span>    vim.api.nvim_buf_set_keymap(<span style="color:#ae81ff">0</span>, <span style="color:#e6db74">&#39;n&#39;</span>, <span style="color:#e6db74">&#39;k&#39;</span>, <span style="color:#e6db74">&#39;gk&#39;</span>, opts)
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">end</span>,
+</span></span><span style="display:flex;"><span>})
+</span></span></code></pre></div><p>I stole this from some reddit comment, but it&rsquo;s been a game-changer. What this does is enable &ldquo;visual line-jumping&rdquo;. When you use nvim with word-wrapping, you&rsquo;ll notice that you can&rsquo;t go from line to line the same way that you can in a normal text document. That&rsquo;s because what you&rsquo;re seeing is the editor visually wrapping the lines for you, but in reality it&rsquo;s still one line. You can get around this by typing <code>gk</code> every time you want to go down a visual line, but that takes a lot of effort to do <em>every single time you want to go down one line</em>. This just automatically remaps <code>jk</code> -&gt; <code>gj gk</code> every time you&rsquo;re in a markdown/latex environment. If you want to jump real lines though, this creates a problem. If you have a long paragraph that when word-wrapping, seems to be 5 lines tall, it&rsquo;s still one line. But the binds still apply, so jumping from (example) line 150 to 20 lines up won&rsquo;t actually be 20 lines up. It&rsquo;s actually 25 lines up! To get around this, I use other vim motions or toggle word-wrapping all together to move. Below are my keymaps, and you will see how I do this.</p>
+<h3 id="keymapslua">keymaps.lua</h3>
+<p>I think this is where things get really interesting. I use which-key.nvim, which is a fork of the popular emacs plugin for nvim. This means if you&rsquo;re ever confused as to what a keybinding does, fear not! Which-key has a pop-up menu which comes out some time after you&rsquo;ve hit a motion key. I&rsquo;ve also given a description of what each bind does, so if there&rsquo;s a time where you&rsquo;re confused by what something does, which-key will show the purpose at the bottom of your screen!</p>
+<p>These are the keys that I use to toggle certain modes/settings while I am writing. Sometimes disabling word-wrapping makes quick navigation easier, so having it bound to <!-- raw HTML omitted -->tw is a really comfortable and convenient keybinding for me. <!-- raw HTML omitted -->tf activates my &ldquo;focus mode&rdquo; through a plugin <a href="https://github.com/pocco81/true-zen.nvim">true-zen.nvim</a>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>    t <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>        name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Toggle&#34;</span>,
+</span></span><span style="display:flex;"><span>        d <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;:call ToggleDeadKeys()&lt;CR&gt;&#34;</span>, <span style="color:#e6db74">&#34;Toggle Deadkeys&#34;</span>},
+</span></span><span style="display:flex;"><span>        f <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;:TZAtaraxis&lt;CR&gt;&#34;</span>, <span style="color:#e6db74">&#34;Toggle focus&#34;</span>},
+</span></span><span style="display:flex;"><span>        i <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;:call ToggleIPA()&lt;CR&gt;&#34;</span>, <span style="color:#e6db74">&#34;Toggle IPA&#34;</span>},
+</span></span><span style="display:flex;"><span>        t <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;:call ToggleProse()&lt;CR&gt;&#34;</span>, <span style="color:#e6db74">&#34;Toggle Prose&#34;</span>},
+</span></span><span style="display:flex;"><span>        w <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;:setlocal wrap!&lt;CR&gt;&#34;</span>, <span style="color:#e6db74">&#34;Toggle word-wrapping&#34;</span>},
+</span></span><span style="display:flex;"><span>    },
+</span></span></code></pre></div><p>This is a Vimtex specific command that I use to count the words in my document without counting all the LaTeX jazz. It&rsquo;s still a rough estimate however, and I do have a word-counter integrated into my status bar, but it&rsquo;s still a nice bind to have to double check how I am doing.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>    l <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>        name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;LaTeX&#34;</span>,
+</span></span><span style="display:flex;"><span>        c <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;&lt;cmd&gt;VimtexCountWords&lt;cr&gt;&#34;</span>, <span style="color:#e6db74">&#34;Count words (.tex)&#34;</span>},
+</span></span><span style="display:flex;"><span>    },
+</span></span></code></pre></div><p>For people that use Zotero, here&rsquo;s a keymap I use to find a citation. The other keymaps I use with this plugin are in their configuration file which will be shown later. How I use Zotero requires an entirely different blog post, which I will have linked <a href="https://google.ca">here</a>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>    f <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>      z <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;:Telescope bibtex&lt;CR&gt;&#34;</span>, <span style="color:#e6db74">&#34;Find Zotero Citation&#34;</span>, opts},
+</span></span><span style="display:flex;"><span>    },
+</span></span></code></pre></div><p>Lastly, this is what I use for finding files in my current project directory. It may seem weird since I still use netrw to go through files and folders, but it&rsquo;s what I know so don&rsquo;t roast me too hard :')</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>    p <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>        name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Files&#34;</span>,
+</span></span><span style="display:flex;"><span>        b <span style="color:#f92672">=</span> {builtin.buffers, <span style="color:#e6db74">&#34;View buffers&#34;</span>},
+</span></span><span style="display:flex;"><span>        g <span style="color:#f92672">=</span> {builtin.live_grep, <span style="color:#e6db74">&#34;Live grep&#34;</span>},
+</span></span><span style="display:flex;"><span>        h <span style="color:#f92672">=</span> {builtin.help_tags, <span style="color:#e6db74">&#34;Help tags&#34;</span>},
+</span></span><span style="display:flex;"><span>        s <span style="color:#f92672">=</span> {builtin.find_files, <span style="color:#e6db74">&#34;Find files&#34;</span>},
+</span></span><span style="display:flex;"><span>        v <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;&lt;cmd&gt;e .&lt;cr&gt;&#34;</span>, <span style="color:#e6db74">&#34;Open Netrw&#34;</span>},
+</span></span><span style="display:flex;"><span>    },
+</span></span></code></pre></div><h2 id="confignvimlualucaslazy">~/.config/nvim/lua/lucas/lazy/</h2>
+<p>Here&rsquo;s where things get <em><strong>REALLY</strong></em> interesting. <em>/srs</em></p>
+<h3 id="writelua">write.lua</h3>
+<p>This file is where I store all the plugins I use for writing. There are only three in here, but there are actually two others, one I use for my Zettelkasten and the other for citations. Both are in their own files which are to be covered later.</p>
+<p>This is the ethereal ever-lasting vimtex plugin, a legendary plugin for vim + LaTeX and writing enthusiasts alike. I have this load only on &ldquo;.tex&rdquo; files since that&rsquo;s the only instance which this plugin works anyways. Lazy-loading this saves a lot <em>(a lot)</em> of startup time. I use the <code>-xelatex</code> flag to render in XeLaTeX since it&rsquo;s pretty standard when writing in Humanities (at least I think). The PDF viewer I use is Zathura, hence why it&rsquo;s listed under multiple <code>_view_</code> commands. I mention this only for those who don&rsquo;t know what Zathura is, and had those lines confuse you.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>    {<span style="color:#e6db74">&#39;lervag/vimtex&#39;</span>,
+</span></span><span style="display:flex;"><span>      ft <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;tex&#34;</span>},
+</span></span><span style="display:flex;"><span>      config <span style="color:#f92672">=</span> <span style="color:#66d9ef">function</span>()
+</span></span><span style="display:flex;"><span>        vim.g[<span style="color:#e6db74">&#39;tex_flavor&#39;</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;latex&#39;</span>
+</span></span><span style="display:flex;"><span>        vim.g[<span style="color:#e6db74">&#39;vimtex_compiler_latexmk_engines&#39;</span>] <span style="color:#f92672">=</span> {[<span style="color:#e6db74">&#39;_&#39;</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;-xelatex&#39;</span>}
+</span></span><span style="display:flex;"><span>        vim.g[<span style="color:#e6db74">&#39;vimtex_view_method&#39;</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;zathura&#39;</span>
+</span></span><span style="display:flex;"><span>        vim.g[<span style="color:#e6db74">&#39;vimtex_view_general_viewer&#39;</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;zathura&#39;</span>
+</span></span><span style="display:flex;"><span>        vim.g[<span style="color:#e6db74">&#39;vimtex_view_general_options&#39;</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;--unique file:@pdf#src@line@tex&#39;</span>
+</span></span><span style="display:flex;"><span>        vim.g[<span style="color:#e6db74">&#39;vimtex_compiler_method&#39;</span>] <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;latexmk&#39;</span>
+</span></span><span style="display:flex;"><span>        vim.g[<span style="color:#e6db74">&#39;vimtex_view_automatic&#39;</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>    },
+</span></span></code></pre></div><p>This is another essential plugin. This is the plugin that you use to render your PDFs while still in nvim! This works in conjunction with vimtex and don&rsquo;t require any further setup.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>    {<span style="color:#e6db74">&#39;xuhdev/vim-latex-live-preview&#39;</span>, ft <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;tex&#34;</span>}},
+</span></span></code></pre></div><p>Have your own opinions about Luke Smith, but vimling is something I&rsquo;ve used every chance I&rsquo;ve gotten. The binds for this were defined above in <code>keymaps.lua</code>, but basically what this allows for is IPA/dead-key typing in the text editor using Luke&rsquo;s own preferences. If you do decide to use this plugin, I recommend having the <a href="https://github.com/LukeSmithxyz/vimling">source code</a> for it pulled up in another window or monitor so you know what it is you need to type to get what you want. This isn&rsquo;t really a plugin and more a collection of vim scripts.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-lua" data-lang="lua"><span style="display:flex;"><span>    {<span style="color:#e6db74">&#39;Lukesmithxyz/vimling&#39;</span>, ft <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;tex&#34;</span>, <span style="color:#e6db74">&#34;md&#34;</span>}},
+</span></span></code></pre></div><div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p><code>cd</code> is how we&rsquo;ll be &ldquo;changing directories&rdquo; throughout this tutorial. It&rsquo;s important to note that if you have no idea what <code>cd</code> does, you should at least know it doesn&rsquo;t &ldquo;change&rdquo; any directory. It changes changes which directory you (the user) is in. The directory itself is the same as when you weren&rsquo;t <code>cd</code>&rsquo;d into it :)&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+
+</main>
+
+  <footer>
+  
+  
+  <hr/>
+  <a href="https://youtube.com/tokisuno">YouTube</a> | <a href="https://www.goodreads.com/user/show/146547946-tokisuno">Goodreads</a>
+  
+  </footer>
+  </body>
+</html>
+

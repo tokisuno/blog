@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Language on home</title>
+    <link>http://localhost:1313/blog/tags/language/</link>
+    <description>Recent content in Language on home</description>
+    <generator>Hugo</generator>
+    <language>en-ca</language>
+    <lastBuildDate>Sat, 27 Apr 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/blog/tags/language/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Going back to Japanese!</title>
+      <link>http://localhost:1313/blog/posts/20240427/</link>
+      <pubDate>Sat, 27 Apr 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/blog/posts/20240427/</guid>
+      <description>&lt;p&gt;I spent a long time trying to learn Japanese, but at one point during the summer and this past academic year I really slacked on grammar. I had plenty of reasons to take a step back from it &amp;ndash; I had a lot going on in my personal life which prevented me from having any mental capacity to focus. However, that isn&amp;rsquo;t the case anymore, so I believe it&amp;rsquo;s time for me to pick myself up by the bootstraps and go back to learning Japanese!&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
